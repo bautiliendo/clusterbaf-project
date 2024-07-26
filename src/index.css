@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    button {
-        @apply border py-2 px-3 rounded-full
+@layer components {
+    .btn-custom {
+        @apply text-gray-900 bg-jonquil font-bold hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 border border-black;
     }
 }

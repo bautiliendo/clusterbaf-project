@@ -41,7 +41,7 @@ export const NavBar: React.FC = () => {
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
             <li className='relative group'>
               <button
-                className='flex items-center hover:scale-[1.04] border-none'
+                className='flex items-center hover:scale-[1.04] border-none px-4'
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
