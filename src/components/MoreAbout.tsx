@@ -23,7 +23,7 @@ export const MoreAbout: React.FC = () => {
 
                     <div>
 
-                        <h2 className="mt-10 text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl lg:leading-tight">Soluciones adaptadas a su medida</h2>
+                        <h2 className="mb-8 text-3xl font-extrabold  text-gray-900 sm:text-4xl">Soluciones adaptadas a su medida</h2>
                         <p className="mt-6 text-lg leading-relaxed text-gray-600">En <strong>CLUSTERBAF</strong>, contamos con reconocida experiencia en la industria manufacturera. Ofrecemos una amplia variedad de alternativas y soluciones a la problemática que las Empresas deben afrontar.</p>
                         <p className="mt-2 text-lg leading-relaxed text-gray-600"> Cualquiera sea el tamaño de los Proyectos y Obras que lidere su empresa, nuestros servicios siempre se adaptarán a los requisitos de alcance, calidad y plazos requeridos, respaldando el trabajo con la misma seriedad, responsabilidad y entusiasmo con la que afrontamos cada compromiso</p>
                     </div>
