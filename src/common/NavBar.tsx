@@ -1,26 +1,16 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Logo from '../assets/logo.jpg';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFlag, FaChevronDown } from "react-icons/fa";
+import { scrollToSection } from "../helpers/ScrollToSection";
 
 export const NavBar: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
 
   const handleNav = () => {
     setNav(!nav)
-  }
-
-  const handleLogoRedirect = (e: React.MouseEvent<HTMLImageElement>) => {
-    e.preventDefault();
-    if (pathname === '/') {
-      window.scrollTo(0, 0)
-    } else {
-      navigate('/')
-    }
   }
 
   const toggleDropdown = () => {
@@ -31,11 +21,12 @@ export const NavBar: React.FC = () => {
     "Ingeniería en Gestión Integral de Calidad", "Ingeniería de Procesos", "Industrialización de Componentes", "Ingeniería de Soporte", "Mantenimiento e Instalaciones Industriales ", "Outsourcing de servicios", "Capacitaciones"
   ];
 
+
   return (
     <div className="top-0 left-0 w-full z-50 fixed bg-rich_black">
       <div className='flex items-center justify-between h-30 text-white px-4 max-w-7xl mx-auto'>
         <div className="flex-shrink-0">
-          <img src={Logo} className="h-24 cursor-pointer" onClick={handleLogoRedirect} alt="Logo Clusterbaf" />
+          <img src={Logo} className="h-24 cursor-pointer" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
         </div>
         <div className="flex flex-grow justify-end items-center">
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
@@ -68,9 +59,13 @@ export const NavBar: React.FC = () => {
                 </div>
               )}
             </li>
-            <li className='hover:scale-[1.04]'><Link to='/'>Nosotros</Link></li>
-            <li className='hover:scale-[1.04]'><Link to='/'>Contacto</Link></li>
-            <li className='hover:scale-[1.04]'><Link to='/'><FaFlag /></Link></li>
+            <li className='hover:scale-[1.04]'>
+              <button onClick={() => scrollToSection('about')}>Nosotros</button>
+            </li>
+            <li className='hover:scale-[1.04]'>
+              <button onClick={() => scrollToSection('contact')}>Contacto</button>
+            </li>
+            <li className='hover:scale-[1.04]'><FaFlag /></li>
           </ul>
         </div>
 
@@ -89,7 +84,7 @@ export const NavBar: React.FC = () => {
             e.stopPropagation();
           }} className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-50 bg-rich_black border-r-gray-900 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%]'}>
             <div className="flex items-center justify-between mx-4">
-              <img src={Logo} className="h-24 cursor-pointer" onClick={(e) => { handleLogoRedirect(e); handleNav() }} alt="Logo Clusterbaf" />
+              <img src={Logo} className="h-24 cursor-pointer" onClick={() => { scrollToSection('about'); handleNav() }} alt="Logo Clusterbaf" />
               <AiOutlineClose size={25} onClick={handleNav} className="" />
             </div>
             <ul className="p-4 font-bold flex flex-col text-center">
@@ -116,8 +111,12 @@ export const NavBar: React.FC = () => {
                   </div>
                 )}
               </li>
-              <li className='p-4 border-b border-gray-600 hover:underline uppercase'><Link to='/' onClick={handleNav}>Nosotros</Link></li>
-              <li className='p-4 border-b border-gray-600 hover:underline uppercase'><Link to='/' onClick={handleNav}>Contacto</Link></li>
+              <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
+                <button onClick={() => { scrollToSection('about'); handleNav() }}>Nosotros</button>
+              </li>
+              <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
+                <button onClick={() => { scrollToSection('contact'); handleNav() }}>Contacto</button>
+              </li>
               <li className='p-4 mx-auto'><FaFlag /></li>
             </ul>
           </div>
