@@ -7,10 +7,16 @@ import { Contact } from '../components/Contact'
 export const HomePage = () => {
   return (
     <>
-    <Hero />
-    <About />
-    <Contact />
-    <Brands />
+      <div id="hero">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+      <Brands />
     </>
   )
 }

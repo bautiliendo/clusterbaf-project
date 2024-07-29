@@ -11,7 +11,7 @@ export const About: React.FC = () => {
     }
 
     return (
-        <div className="py-10 bg-white sm:pt-16 lg:pt-24">
+        <div className="py-10 bg-white sm:py-16 lg:py-20">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <section className="bg-gray-100">
                     <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
