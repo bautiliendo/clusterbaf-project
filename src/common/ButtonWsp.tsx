@@ -1,14 +1,7 @@
 import { FaWhatsapp } from 'react-icons/fa'
+import { handleWhatsapp } from '../helpers/handleLinks'
 
 export const ButtonWsp = () => {
-
-    const handleWhatsapp = (e: React.FormEvent<HTMLButtonElement>) => {
-        e.preventDefault();
-        const mensaje = "Hola, Me contacto desde su página web para realizar una consulta"
-        const numeroTel = '';
-        const whatsappLink = `https://wa.me/${numeroTel}?text=${encodeURIComponent(mensaje)}`;
-        window.open(whatsappLink, '_blank')
-    }
     return (
         <button
             onClick={handleWhatsapp}
