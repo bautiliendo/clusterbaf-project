@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import Logo from '../assets/logo.jpg';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFlag, FaChevronDown } from "react-icons/fa";
-import { scrollToSection } from "../helpers/ScrollToSection";
+import { useScrollNavigation } from "../helpers/ScrollToSection";
+import { ProductOption } from "../types";
 
 export const NavBar: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
+  const scrollToSection = useScrollNavigation();
 
   const handleNav = () => {
     setNav(!nav)
@@ -17,9 +19,16 @@ export const NavBar: React.FC = () => {
     setDropdownOpen(!dropdownOpen);
   }
 
-  const productOptions = [
-    "Ingeniería en Gestión Integral de Calidad", "Ingeniería de Procesos", "Industrialización de Componentes", "Ingeniería de Soporte", "Mantenimiento e Instalaciones Industriales ", "Outsourcing de servicios", "Capacitaciones"
-  ];
+  const productOptionsRoutes: Record<ProductOption, string> = {
+    "Ingeniería en Gestión Integral de Calidad": "/ingenieriaGestion",
+    "Ingeniería de Procesos": "/ingenieriaProcesos",
+    "Industrialización de Componentes": "/industrializacion",
+    "Mantenimiento e Instalaciones Industriales": "/mantenimiento",
+    "Outsourcing de servicios": "/outsourcing",
+    "Capacitaciones": "/capacitaciones"
+  };
+
+  const productOptions: ProductOption[] = Object.keys(productOptionsRoutes) as ProductOption[];
 
 
   return (
@@ -35,13 +44,16 @@ export const NavBar: React.FC = () => {
                 className='flex items-center hover:scale-[1.04] border-none px-4'
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
+                onClick={() => {
+                  scrollToSection('ingYServ')
+                }}
               >
                 Ingeniería y Servicios
                 <FaChevronDown className={`ml-2 mt-1 transform ${dropdownOpen ? 'rotate-180' : ''} transition-transform text-jonquil`} />
               </button>
               {dropdownOpen && (
                 <div
-                  className="absolute left-0 rounded-sm shadow-lg bg-rich_black  divide-y divide-gray-100 "
+                  className="absolute left-0 rounded-lg shadow-lg bg-rich_black  divide-y divide-gray-100 "
                   onMouseEnter={() => setDropdownOpen(true)}
                   onMouseLeave={() => setDropdownOpen(false)}
                 >
@@ -49,7 +61,7 @@ export const NavBar: React.FC = () => {
                     {productOptions.map((option, index) => (
                       <Link
                         key={index}
-                        to="/"
+                        to={productOptionsRoutes[option]}
                         className="block px-4 py-2 text-sm  text-white "
                       >
                         <p className="hover:scale-[1.02]">{index + 1}- {option}</p>
@@ -101,7 +113,7 @@ export const NavBar: React.FC = () => {
                     {productOptions.map((option, index) => (
                       <Link
                         key={index}
-                        to="/"
+                        to={productOptionsRoutes[option]}
                         className="block py-2 px-4 text-sm text-left"
                         onClick={handleNav}
                       >

@@ -1,7 +1,9 @@
-import { scrollToSection } from "../helpers/ScrollToSection"
+import { useScrollNavigation } from "../helpers/ScrollToSection";
 
 
 export const Hero = () => {
+  const scrollToSection = useScrollNavigation();
+  
   return (
     <div className="w-full h-screen">
       <img className="top-0 left-0 w-full h-screen object-cover"
