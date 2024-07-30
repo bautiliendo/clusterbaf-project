@@ -6,4 +6,8 @@
     .btn-custom {
         @apply text-gray-900 bg-jonquil font-bold hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 me-2 mb-2 border border-black;
     }
+
+    .btn-custom2 {
+        @apply inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-jonquil transition-all duration-200 border-b-2 border-transparent hover:border-[#F7BE38] focus:border-[#F7BE38]
+    }
 }
