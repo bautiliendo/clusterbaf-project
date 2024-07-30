@@ -2,7 +2,7 @@ import React from 'react';
 
 export const Contact: React.FC = () => {
     return (
-        <section className="py-10 pt-28 bg-white sm:py-16 lg:py-24 bg-gradient-to-b from-white to-gray-100">
+        <section className="py-10 bg-white sm:py-16 lg:py-28 pt-28 bg-gradient-to-b from-white to-gray-100">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center mb-16">
                     <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contáctanos</h2>
