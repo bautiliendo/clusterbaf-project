@@ -25,3 +25,30 @@ export const handleGmail = (e: React.MouseEvent<HTMLButtonElement>) => {
   window.open(gmailLink, '_blank');
 
 };
+
+export const handleGmailCV = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  
+  const formData = new FormData(e.currentTarget);
+  const name = formData.get('user-name') as string;
+  const email = formData.get('user-email') as string;
+  const phone = formData.get('user-phone') as string;
+  const message = formData.get('user-message') as string;
+
+  const toEmail = 'comercial@clusterbaf.com';
+  const subject = 'Quiero sumarme al equipo CLUSTERBAF';
+  const body = `Hola, me gustaría sumarme al equipo CLUSTERBAF.
+
+Nombre: ${name}
+Email: ${email}
+Teléfono: ${phone}
+
+Mensaje:
+${message}
+
+Adjuntaré mi CV`;
+
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${toEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  window.open(gmailLink, '_blank');
+};

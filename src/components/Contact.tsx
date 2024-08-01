@@ -1,5 +1,8 @@
-import React, { useState } from 'react';
+import React, { FormEvent, useRef, useState } from 'react';
 import { JoinTeam } from './JoinTeam';
+import emailjs from '@emailjs/browser';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact: React.FC = () => {
     const [showJoinTeamForm, setShowJoinTeamForm] = useState(false);
@@ -8,8 +11,50 @@ export const Contact: React.FC = () => {
         setShowJoinTeamForm(!showJoinTeamForm);
     };
 
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs
+                .sendForm('service_1d5guma', 'template_acf17t5', form.current, {
+                    publicKey: 'zmR_yzpITXNAz8CcB',
+                })
+                .then(
+                    () => {
+                        toast.success("¡Email enviado con éxito!", {
+                            position: "bottom-right",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                        });
+                        if (form.current) form.current.reset();
+                    },
+                    (error: { text: string }) => {
+                        console.log('FAILED...', error.text);
+                        toast.error("Error al enviar el email. Por favor, intente nuevamente.", {
+                            position: "bottom-right",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: true,
+                            draggable: true,
+                            progress: undefined,
+                        });
+                    },
+                );
+        } else {
+            console.error('Form reference is null');
+        }
+    };
+
     return (
         <section className="py-28 bg-gradient-to-b from-white to-gray-100">
+            <ToastContainer />
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center mb-12">
                     <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contactanos</h2>
@@ -21,34 +66,33 @@ export const Contact: React.FC = () => {
                         <div className="p-6 sm:p-10 bg-rich_black text-white">
                             <h3 className="text-3xl font-semibold mb-6">Envianos un mensaje</h3>
 
-                            <form action="#" method="POST" className="space-y-6">
+                            <form ref={form} onSubmit={sendEmail} className="space-y-6">
                                 <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6">
                                     <div>
-                                        <label htmlFor="name" className="block text-sm font-medium">Tu nombre</label>
-                                        <input type="text" name="name" id="name" placeholder="Ingresa tu nombre" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">Tu nombre</label>
+                                        <input type="text" name="user_name" placeholder="Ingresa tu nombre" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="email" className="block text-sm font-medium">Tu email</label>
-                                        <input type="email" name="email" id="email" placeholder="Ingresa tu email" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">Tu email</label>
+                                        <input type="email" name="user_email" placeholder="Ingresa tu email" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="phone" className="block text-sm font-medium">Número de teléfono</label>
-                                        <input type="tel" name="phone" id="phone" placeholder="Ingresa tu teléfono" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">Número de teléfono</label>
+                                        <input type="tel" name="user_phone" placeholder="Ingresa tu teléfono" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="company" className="block text-sm font-medium">Nombre de la empresa</label>
-                                        <input type="text" name="company" id="company" placeholder="Ingresa el nombre de tu empresa" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">Nombre de la empresa</label>
+                                        <input type="text" name="user_company" placeholder="Ingresa el nombre de tu empresa" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label htmlFor="message" className="block text-sm font-medium">Mensaje</label>
+                                    <label className="block text-sm font-medium">Mensaje</label>
                                     <textarea
                                         name="message"
-                                        id="message"
                                         placeholder="Escribe tu mensaje aquí"
                                         rows={4}
                                         className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent resize-none"
@@ -56,7 +100,7 @@ export const Contact: React.FC = () => {
                                 </div>
 
                                 <div>
-                                    <button type="submit" className="btn-custom">
+                                    <button type="submit" className="btn-custom" value="Send">
                                         Enviar mensaje
                                     </button>
                                 </div>
