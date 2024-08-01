@@ -6,7 +6,7 @@ export const IngYServ: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <section className="py-10 bg-white sm:py-16 lg:py-28">
+        <section className="py-32 bg-white">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="text-center">
                     <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Ingeniería y Servicios</h2>

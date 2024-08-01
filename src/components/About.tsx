@@ -12,10 +12,10 @@ export const About: React.FC = () => {
     }
 
     return (
-        <div className="py-10 bg-white sm:py-16 lg:py-20">
+        <section className="py-16 bg-white">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
-                <section className="bg-gray-100">
-                    <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8">
+                <div className="bg-gray-100 rounded-lg overflow-hidden">
+                    <div className="py-12 px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                             <div className="max-w-lg">
                                 <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">¿Quiénes Somos?</h2>
@@ -31,11 +31,11 @@ export const About: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
                 <section className="py-6 pt-0 rounded-md">
                     <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                         <div className="grid max-w-md grid-cols-1 gap-6 mx-auto lg:grid-cols-3 lg:max-w-full lg:gap-14">
-                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl">
+                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
                                         <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Misión</span>
@@ -51,7 +51,7 @@ export const About: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl">
+                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
                                         <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Visión</span>
@@ -67,7 +67,7 @@ export const About: React.FC = () => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl">
+                            <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
                                         <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Valores</span>
@@ -98,6 +98,6 @@ export const About: React.FC = () => {
                     </div>
                 </section>
             </div>
-        </div>
+        </section>
     )
 }

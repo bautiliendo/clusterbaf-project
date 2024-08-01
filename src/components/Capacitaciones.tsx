@@ -6,7 +6,7 @@ export const Capacitaciones = () => {
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
-          <div className="relative">
+          <div className="relative animate-fade-right animate-ease-linear">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
               src={capacitaciones}
@@ -43,7 +43,7 @@ export const Capacitaciones = () => {
       </div>
       <div className="flex justify-center py-20 px-4 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl">
-          <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl">
+          <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl animate-fade animate-ease-linear">
             <div className="flex flex-col justify-between flex-1 px-5 py-6">
               <div className="flex-shrink-0">
                 <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">¿Qué ofrecemos? </span>
@@ -54,7 +54,7 @@ export const Capacitaciones = () => {
             </div>
           </div>
 
-          <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl">
+          <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade animate-ease-linear">
             <div className="flex flex-col justify-between flex-1 px-5 py-6">
               <div className="flex-shrink-0">
                 <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">¿Cómo?</span>

@@ -10,7 +10,7 @@ export const Outsourcing = () => {
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
-          <div className="relative">
+          <div className="relative animate-fade-right animate-ease-linear">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
               src={outsourcing}

@@ -3,7 +3,7 @@ import Proceso from '../assets/proceso-estrategico.webp'
 
 export const MoreAbout: React.FC = () => {
     return (
-        <section className="py-10 sm:py-16 ">
+        <section className="py-10 sm:py-16 animate-fade-down animate-ease-linear">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid items-center grid-cols-1 gap-y-8 lg:grid-cols-2 gap-x-16 xl:gap-x-24">
                     <div className="relative mb-12">
@@ -11,7 +11,7 @@ export const MoreAbout: React.FC = () => {
 
                         <div className="absolute w-full max-w-xs px-4 -translate-x-1/2 sm:px-0 sm:max-w-sm left-1/2 -bottom-12">
                             <div className="overflow-hidden bg-white rounded-xl border border-jonquil-100">
-                                <div className="px-10 py-6">
+                                <div className="px-10 py-6 hidden lg:flex ">
                                     <div className="flex items-center">
                                         <p className="flex-shrink-0 text-3xl font-bold text-jonquil sm:text-4xl">100%</p>
                                         <p className="pl-6 text-xs font-medium text-black sm:text-lg">Compromiso con <br />nuestros clientes</p>

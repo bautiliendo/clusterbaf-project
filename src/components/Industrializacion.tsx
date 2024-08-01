@@ -6,7 +6,7 @@ export const Industrializacion = () => {
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-start grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
-          <div className="relative overflow-hidden pt-10">
+          <div className="relative overflow-hidden pt-10  animate-fade-right animate-ease-linear">
             <div className="relative w-full max-w-2xl mx-auto">
               <img
                 className="w-full rounded-lg shadow-xl"
@@ -38,7 +38,7 @@ export const Industrializacion = () => {
                 </li>
               ))}
             </ul>
-            <p className="flex items-start bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg text-xl text-gray-600">
+            <p className="flex items-start bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg text-xl text-gray-600 animate-fade animate-ease-linear">
               Estamos presentes en todas las etapas del ciclo de vida del producto, desde su concepción inicial hasta el final de su vida útil.
             </p>
           </div>
