@@ -1,4 +1,9 @@
 import { CheckCircle } from "lucide-react"
+import { Outsourcing1 } from "./Outsourcing1"
+import { Outsourcing2 } from "./Outsourcing2"
+import { Outsourcing3 } from "./Outsourcing3"
+import { Outsourcing4 } from "./Outsourcing4"
+import outsourcing from '../assets/Outosourcing.webp'
 
 export const Outsourcing = () => {
   return (
@@ -8,12 +13,11 @@ export const Outsourcing = () => {
           <div className="relative">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
-              src="https://img.freepik.com/free-photo/business-report-graphs-charts-business-reports-pile-documents-business-concept_1150-2254.jpg?t=st=1722346716~exp=1722350316~hmac=050a4e8ebd98915b5ba100f6e9656885fa61f39d0c6b18fb1e5d6faafd3aa879&w=1380"
+              src={outsourcing}
               alt="Trabajador en fábrica"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
           </div>
-
           <div className="space-y-8">
             <h2 className="text-4xl font-extrabold text-rich_black-500 sm:text-5xl">
               Outsourcing de Servicios
@@ -34,6 +38,10 @@ export const Outsourcing = () => {
           </div>
         </div>
       </div>
+      <Outsourcing1 />
+      <Outsourcing2 />
+      <Outsourcing3 />
+      <Outsourcing4 />
     </section>
   )
 }
