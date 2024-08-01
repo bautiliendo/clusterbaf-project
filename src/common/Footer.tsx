@@ -1,23 +1,27 @@
 import React from 'react';
-import Logo from '../assets/logo.jpg';
+import Logo from '../assets/logo-footer-transformed.webp';
 import { handleGmail, handleLinkedIn, handleWhatsapp } from '../helpers/handleLinks';
+import { useScrollNavigation } from '../helpers/ScrollToSection';
 
 export const Footer: React.FC = () => {
+    const scrollToSection = useScrollNavigation();
+
+
     return (
         <footer className="py-10 bg-rich_black sm:pt-16 lg:pt-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <img className="h-20 mb-6" src={Logo} alt="Logo" />
+                        <img className="mb-6 w-full max-w-80 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
                         <p className="text-sm text-white">© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)</p>
                     </div>
 
                     <div>
                         <h3 className="text-lg font-bold text-white mb-4">Navegación</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-white hover:text-opacity-80 transition-colors">Ingeniería y servicios</a></li>
-                            <li><a href="#" className="text-white hover:text-opacity-80 transition-colors">Nosotros</a></li>
-                            <li><a href="#" className="text-white hover:text-opacity-80 transition-colors">Contacto</a></li>
+                            <li><a onClick={() => { scrollToSection('ingYServ') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Ingeniería y servicios</a></li>
+                            <li><a onClick={() => { scrollToSection('about') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Nosotros</a></li>
+                            <li><a onClick={() => { scrollToSection('contact') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Contacto</a></li>
                         </ul>
                     </div>
 

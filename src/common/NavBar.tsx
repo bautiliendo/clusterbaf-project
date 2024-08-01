@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from '../assets/logo.jpg';
+import Logo from '../assets/logo.webp';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaFlag, FaChevronDown } from "react-icons/fa";
 import { useScrollNavigation } from "../helpers/ScrollToSection";
