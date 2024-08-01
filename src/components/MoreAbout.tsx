@@ -1,5 +1,5 @@
 import React from 'react';
-import Proceso from '../assets/proceso-estrategico.png'
+import Proceso from '../assets/proceso-estrategico.webp'
 
 export const MoreAbout: React.FC = () => {
     return (

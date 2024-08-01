@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { MoreAbout } from './MoreAbout';
+import team from '../assets/Equipo.webp'
 
 export const About: React.FC = () => {
 
@@ -26,8 +27,7 @@ export const About: React.FC = () => {
                                 </p>
                             </div>
                             <div className="mt-12 md:mt-0">
-                                {/* <img src="https://images.unsplash.com/photo-1531973576160-7125cd663d86" alt="About Us Image" className="object-cover rounded-lg shadow-md" />  */}
-                                <img src="https://img.freepik.com/free-photo/two-colleagues-factory_1303-14331.jpg?t=st=1722282590~exp=1722286190~hmac=e7eca4c834362693c3ff14b8df5a9cdd86e98cac9cb262cc20651faa009c950b&w=1380" alt="About Us Image" className="object-cover rounded-lg shadow-md" />
+                                <img src={team} alt="About Us Image" className="object-cover rounded-lg shadow-md" />
                             </div>
                         </div>
                     </div>
