@@ -2,19 +2,19 @@ import React from 'react';
 import Marquee from "react-fast-marquee";
 
 // Import all images
-import Iveco from '../assets/iveco.jpg';
-import Paolucci from '../assets/paolucci.png';
-import Autoneum from '../assets/autoneum.png';
-import Volkswagen from '../assets/volkswagen.png';
-import Volt from '../assets/volt.png';
-import Magnetti from '../assets/magneti.png';
-import Sps from '../assets/sps.png';
-import Xl from '../assets/xl.png';
-import Zl from '../assets/zl.jpeg';
-import Iraola from '../assets/iraola.png';
-import Entech from '../assets/entech.png';
-import Ame from '../assets/ame.png';
-import Eslava from '../assets/eslava.png';
+import Iveco from '../assets/iveco.webp';
+import Paolucci from '../assets/paolucci.webp';
+import Autoneum from '../assets/autoneum.webp';
+import Volkswagen from '../assets/volkswagen.webp';
+import Volt from '../assets/volt.webp';
+import Magnetti from '../assets/magneti.webp';
+import Sps from '../assets/sps.webp';
+import Xl from '../assets/xl.webp';
+import Zl from '../assets/zl.webp';
+import Corven from '../assets/Corven.webp'
+import Entech from '../assets/entech.webp';
+import Ame from '../assets/ame.webp';
+import Eslava from '../assets/eslava.webp';
 import { BrandLogoProps } from '../types';
 
 const brandData = [
@@ -27,7 +27,7 @@ const brandData = [
     { name: 'Sps', logo: Sps },
     { name: 'Xl', logo: Xl },
     { name: 'Zl', logo: Zl },
-    { name: 'Iraola', logo: Iraola },
+    { name: 'Corven', logo: Corven },
     { name: 'Entech', logo: Entech },
     { name: 'Ame', logo: Ame },
     { name: 'Eslava', logo: Eslava },

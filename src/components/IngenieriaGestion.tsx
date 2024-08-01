@@ -1,4 +1,5 @@
 import { CheckCircle } from 'lucide-react';
+import ingenieriaGestion from '../assets/IngenieriaGestion.png'
 
 export const IngenieriaGestion = () => {
   return (
@@ -8,8 +9,8 @@ export const IngenieriaGestion = () => {
           <div className="relative">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
-              src="https://img.freepik.com/free-photo/male-worker-factory_1303-14306.jpg?t=st=1722283485~exp=1722287085~hmac=bd8117042fbdd7faf84d82ba44a80e908ed2d57f55e12a1f817321f63973ccdd&w=1380"
-              alt="Trabajador en fábrica"
+              src={ingenieriaGestion}
+              alt="ISO"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
           </div>

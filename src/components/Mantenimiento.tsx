@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react"
+import mantenimiento from '../assets/Mantenimiento.webp'
 
 export const Mantenimiento = () => {
   return (
@@ -8,8 +9,8 @@ export const Mantenimiento = () => {
           <div className="relative">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
-              src="https://img.freepik.com/free-photo/male-worker-factory_1303-14306.jpg?t=st=1722283485~exp=1722287085~hmac=bd8117042fbdd7faf84d82ba44a80e908ed2d57f55e12a1f817321f63973ccdd&w=1380"
-              alt="Trabajador en fábrica"
+              src={mantenimiento}
+              alt="Trabajadora en fábrica"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
           </div>
@@ -51,7 +52,7 @@ export const Mantenimiento = () => {
                 "Así podemos cumplir con los más exigentes requerimientos de la industria, adecuando, adaptando y ajustando los productos a los proyectos desarrollados por el departamento de Ingeniería, garantizando la funcionalidad y rendimiento de los mismos, antes de proceder al montaje en las plantas productivas.",
                 "Ejecutamos proyecto e instalación de equipamiento para handling logístico y de manufactura acorde a las necesidades de la operación.",
               ].map((item, index) => (
-                <li key={index} className="flex items-start">
+                <li key={index}  className="flex items-start bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg">
                   <p className="mt-4 text-xl text-gray-600">{item}</p>
                 </li>
               ))}

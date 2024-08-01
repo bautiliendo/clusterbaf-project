@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react"
+import capacitaciones from '../assets/Capacitaciones.webp'
 
 export const Capacitaciones = () => {
   return (
@@ -8,7 +9,7 @@ export const Capacitaciones = () => {
           <div className="relative">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
-              src="https://img.freepik.com/free-photo/close-up-people-learning-work_23-2149300705.jpg?t=st=1722347840~exp=1722351440~hmac=5e6102cdfbcffd9f5069fe90838d5f6974854833903f81bacd99034e5b81ce35&w=1380"
+              src={capacitaciones}
               alt="Trabajador en fábrica"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
@@ -40,7 +41,7 @@ export const Capacitaciones = () => {
         </div>
 
       </div>
-      <div className="flex justify-center py-20">
+      <div className="flex justify-center py-20 px-4 mx-auto sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-7xl">
           <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl">
             <div className="flex flex-col justify-between flex-1 px-5 py-6">

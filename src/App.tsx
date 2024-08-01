@@ -9,7 +9,7 @@ import { IngenieriaGestion } from './components/IngenieriaGestion';
 import { IngenieriaProcesos } from './components/IngenieriaProcesos';
 import { Industrializacion } from './components/Industrializacion';
 import { Mantenimiento } from './components/Mantenimiento';
-import { Outsourcing } from './components/Outsorcing';
+import { Outsourcing } from './components/Outsourcing';
 import { Capacitaciones } from './components/Capacitaciones';
 import { About } from './components/About';
 import { Contact } from './components/Contact';

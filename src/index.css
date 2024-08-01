@@ -8,6 +8,6 @@
     }
 
     .btn-custom2 {
-        @apply inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-jonquil transition-all duration-200 border-b-2 border-transparent hover:border-[#F7BE38] focus:border-[#F7BE38]
+        @apply inline-flex items-center justify-center pb-0.5 mt-5 text-base font-semibold text-[#F7BE38] transition-all duration-200 border-b-2 border-transparent hover:border-[#F7BE38] focus:border-[#F7BE38]
     }
 }

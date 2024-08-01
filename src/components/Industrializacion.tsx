@@ -1,4 +1,5 @@
 import { CheckCircle } from "lucide-react"
+import industrializacion from '../assets/IndustrializacionComponentes.jpg'
 
 export const Industrializacion = () => {
   return (
@@ -9,7 +10,7 @@ export const Industrializacion = () => {
             <div className="relative w-full max-w-2xl mx-auto">
               <img
                 className="w-full rounded-lg shadow-xl"
-                src="https://img.freepik.com/free-photo/two-workers-showing-quality-control-inspector-industrial-machine-they-are-using-distribution-warehouse_637285-4188.jpg?t=st=1722285613~exp=1722289213~hmac=7cd6dc5395fbdb68fde1e94b098bf4f247d6b74559338f1a4e8e4b29ffd779af&w=1380"
+                src={industrializacion}
                 alt="Personas discutiendo plan en fábrica"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
@@ -37,7 +38,8 @@ export const Industrializacion = () => {
                 </li>
               ))}
             </ul>
-            <p className="mt-4 text-xl text-gray-600">Estamos presentes en todas las etapas del ciclo de vida del producto, desde su concepción inicial hasta el final de su vida útil.
+            <p className="flex items-start bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-lg text-xl text-gray-600">
+              Estamos presentes en todas las etapas del ciclo de vida del producto, desde su concepción inicial hasta el final de su vida útil.
             </p>
           </div>
         </div>
