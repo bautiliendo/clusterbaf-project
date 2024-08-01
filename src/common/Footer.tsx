@@ -2,18 +2,23 @@ import React from 'react';
 import Logo from '../assets/logo-footer-transformed.webp';
 import { handleGmail, handleLinkedIn, handleWhatsapp } from '../helpers/handleLinks';
 import { useScrollNavigation } from '../helpers/ScrollToSection';
+import { FaFileDownload } from "react-icons/fa";
+import Brochure from '../assets/Brochure Institucional Clusterbaf.pdf'
 
 export const Footer: React.FC = () => {
     const scrollToSection = useScrollNavigation();
-
 
     return (
         <footer className="py-10 bg-rich_black sm:pt-16 lg:pt-24">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <img className="mb-6 w-full max-w-80 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
-                        <p className="text-sm text-white">© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)</p>
+                        <img className="mb-4 w-full max-w-80 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
+                        <p className="text-sm text-white mb-4 font-semibold">© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)</p>
+                        <div className='flex gap-1 hover:cursor-pointer'>
+                            <a href={Brochure} onClick={(e) => { e.preventDefault(); window.open(Brochure, '_blank'); }} className="text-sm font-semibold text-jonquil">Descargar Brochure Institucional</a>
+                            <FaFileDownload className='text-jonquil' size={20} />
+                        </div>
                     </div>
 
                     <div>
