@@ -19,20 +19,22 @@ export const HomePage = () => {
   }, [location]);
 
   return (
-    <>
-      <div id="hero">
+    <div className="">
+      <section id="hero" className="">
         <Hero />
-      </div>
-      <div id="about">
+      </section>
+      <section id="about" className="">
         <About />
-      </div>
-      <div id='ingYServ'>
+      </section>
+      <section id="ingYServ" className="">
         <IngYServ />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact" className="">
         <Contact />
-      </div>
-      <Brands />
-    </>
+      </section>
+      <section className="">
+        <Brands />
+      </section>
+    </div>
   )
 }

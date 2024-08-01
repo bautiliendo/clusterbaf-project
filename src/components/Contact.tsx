@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { JoinTeam } from './JoinTeam';
 
 export const Contact: React.FC = () => {
+    const [showJoinTeamForm, setShowJoinTeamForm] = useState(false);
+
+    const toggleJoinTeamForm = () => {
+        setShowJoinTeamForm(!showJoinTeamForm);
+    };
+
     return (
-        <section className="py-10 bg-white sm:py-16 lg:py-28 pt-28 bg-gradient-to-b from-white to-gray-100">
+        <section className="py-28 bg-gradient-to-b from-white to-gray-100">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div className="max-w-2xl mx-auto text-center mb-16">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contáctanos</h2>
+                <div className="max-w-2xl mx-auto text-center mb-12">
+                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contactanos</h2>
                     <p className="mt-4 text-xl text-gray-600">Estamos aquí para ayudarte. Atenderemos tus consultas y te brindaremos la mejor asistencia posible.</p>
                 </div>
 
                 <div className="overflow-hidden bg-white rounded-lg shadow-xl">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="p-6 sm:p-10 bg-rich_black text-white">
-                            <h3 className="text-3xl font-semibold mb-6">Envíanos un mensaje</h3>
+                            <h3 className="text-3xl font-semibold mb-6">Envianos un mensaje</h3>
 
                             <form action="#" method="POST" className="space-y-6">
                                 <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6">
@@ -87,10 +94,25 @@ export const Contact: React.FC = () => {
                                         <p className="block mt-1 text-gray-700 hover:text-jonquil transition-colors duration-300">+54 9 351 2883834</p>
                                     </div>
                                 </div>
+
+                                <div className="flex items-start">
+                                    <svg className="w-6 h-6 text-jonquil flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="12" cy="7" r="4"></circle>
+                                    </svg>
+                                    <div className="ml-3">
+                                        <p onClick={toggleJoinTeamForm} className="text-gray-700 hover:text-jonquil transition-colors duration-300 hover:cursor-pointer">
+                                            Sumate a nuestro equipo
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {showJoinTeamForm && (
+                    <JoinTeam />
+                )}
             </div>
         </section>
     )

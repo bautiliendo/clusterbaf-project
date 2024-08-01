@@ -109,18 +109,27 @@ export const NavBar: React.FC = () => {
                   <FaChevronDown className={`ml-2 mt-1 transform ${dropdownOpen ? 'rotate-180' : ''} transition-transform text-jonquil`} />
                 </button>
                 {dropdownOpen && (
-                  <div className="mt-2 space-y-2">
-                    {productOptions.map((option, index) => (
-                      <Link
-                        key={index}
-                        to={productOptionsRoutes[option]}
-                        className="block py-2 px-4 text-sm text-left"
-                        onClick={handleNav}
-                      >
-                        <p className="hover:scale-[1.02]">{index + 1}- {option}</p>
-                      </Link>
-                    ))}
-                  </div>
+                  <>
+                    <Link
+                          to={'/ingYServ'}
+                          className="block py-2 px-4 text-sm text-left"
+                          onClick={handleNav}
+                        >
+                          <p className="hover:scale-[1.02]">Ingeniería y Servicios</p>
+                        </Link>
+                    <div className="mt-2 space-y-2">
+                      {productOptions.map((option, index) => (
+                        <Link
+                          key={index}
+                          to={productOptionsRoutes[option]}
+                          className="block py-2 px-4 text-sm text-left"
+                          onClick={handleNav}
+                        >
+                          <p className="hover:scale-[1.02]">{index + 1}- {option}</p>
+                        </Link>
+                      ))}
+                    </div>
+                  </>
                 )}
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
