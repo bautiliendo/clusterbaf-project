@@ -115,7 +115,7 @@ export const NavBar: React.FC = () => {
                           className="block py-2 px-4 text-sm text-left"
                           onClick={handleNav}
                         >
-                          <p className="hover:scale-[1.02]">Ingeniería y Servicios</p>
+                          <p className="hover:scale-[1.02]">Todos</p>
                         </Link>
                     <div className="mt-2 space-y-2">
                       {productOptions.map((option, index) => (
