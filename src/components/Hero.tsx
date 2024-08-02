@@ -1,8 +1,14 @@
+import React from 'react';
 import { useScrollNavigation } from "../helpers/ScrollToSection";
-import HeroImg from '../assets/Hero.webp'
+import HeroImg from '../assets/Hero.webp';
+import translations from '../translations.json';
+import { useLanguage } from '../hooks/useLanguage';
 
-export const Hero = () => {
+
+export const Hero: React.FC = () => {
   const scrollToSection = useScrollNavigation();
+  const { language } = useLanguage();
+  const t = translations[language].hero;
 
   return (
     <div className="w-full h-screen">
@@ -13,21 +19,16 @@ export const Hero = () => {
       <div className="bg-black/50 absolute top-0 left-0 w-full h-[99.6vh] my-1" />
       <div className="text-white absolute top-0 w-full h-full flex flex-col justify-center">
         <div className="md:left-[10%] max-w-[1100px] m-auto absolute p-4 animate-fade-up">
-          <h1 className="font-bold text-5xl md:text-6xl drop-shadow-2xl text-jonquil">CLUSTERBAF</h1>
+          <h1 className="font-bold text-5xl md:text-6xl drop-shadow-2xl text-jonquil">{t.title}</h1>
           <div className="max-w[600px] drop-shadow-2xl py-2 sm:text-xl text-md">
-            <p>
-              Con más de 20 años de experiencia, ofrecemos soluciones integrales de ingeniería para mejorar la competitividad de su empresa.
-            </p>
-            <p className="hidden md:block">
-              Brindamos un servicio personalizado y de excelencia en todas las etapas de industrialización.
-            </p>
+            <p>{t.description1}</p>
+            <p className="hidden md:block">{t.description2}</p>
           </div>
           <button type="button" className="btn-custom " onClick={() => scrollToSection('contact')}>
-            Contáctenos ahora
+            {t.ctaButton}
           </button>
         </div>
       </div>
-
     </div>
   )
 }

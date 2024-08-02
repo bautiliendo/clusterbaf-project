@@ -2,9 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from '../assets/logo.webp';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaFlag, FaChevronDown } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
 import { useScrollNavigation } from "../helpers/ScrollToSection";
 import { ProductOption } from "../types";
+import { LanguageSwitch } from "./LanguageSwitch";
 
 export const NavBar: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
@@ -40,6 +41,7 @@ export const NavBar: React.FC = () => {
         <div className="flex flex-grow justify-end items-center">
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
             <li className='relative group'>
+              
               <button
                 className='flex items-center hover:scale-[1.04] border-none px-4'
                 onMouseEnter={() => setDropdownOpen(true)}
@@ -77,7 +79,7 @@ export const NavBar: React.FC = () => {
             <li className='hover:scale-[1.04]'>
               <button onClick={() => scrollToSection('contact')}>Contacto</button>
             </li>
-            <li className='hover:scale-[1.04]'><FaFlag /></li>
+            <li className=''><LanguageSwitch /></li>
           </ul>
         </div>
 
@@ -138,7 +140,7 @@ export const NavBar: React.FC = () => {
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
                 <button onClick={() => { scrollToSection('contact'); handleNav() }}>Contacto</button>
               </li>
-              <li className='p-4 mx-auto'><FaFlag /></li>
+              <li className='p-4 mx-auto'><LanguageSwitch /></li>
             </ul>
           </div>
         </div>

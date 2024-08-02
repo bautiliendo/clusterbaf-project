@@ -1,0 +1,18 @@
+{
+  "es": {
+    "hero": {
+      "title": "CLUSTERBAF",
+      "description1": "Con más de 20 años de experiencia, ofrecemos soluciones integrales de ingeniería para mejorar la competitividad de su empresa.",
+      "description2": "Brindamos un servicio personalizado y de excelencia en todas las etapas de industrialización.",
+      "ctaButton": "Contáctenos ahora"
+    }
+  },
+  "en": {
+    "hero": {
+      "title": "CLUSTERBAF",
+      "description1": "With over 20 years of experience, we offer comprehensive engineering solutions to improve your company's competitiveness.",
+      "description2": "We provide personalized and excellent service in all stages of industrialization.",
+      "ctaButton": "Contact us now"
+    }
+  }
+}

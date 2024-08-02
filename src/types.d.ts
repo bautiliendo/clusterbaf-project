@@ -10,3 +10,11 @@ export interface BrandLogoProps {
   | "Mantenimiento e Instalaciones Industriales"
   | "Outsourcing de servicios"
   | "Capacitaciones";
+
+
+  //CONTEXT LANGUAGE
+
+  export interface LanguageContextType {
+    language: Language;
+    setLanguage: (lang: Language) => void;
+  }

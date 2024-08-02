@@ -14,11 +14,12 @@ import { Capacitaciones } from './components/Capacitaciones';
 import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { IngYServ } from './components/IngYServ';
+import { LanguageProvider } from './context/language';
 
 
 const App: React.FC = () => {
   return (
-    <>
+    <LanguageProvider>
       <ScrollToTop />
       <NavBar />
       <Routes>
@@ -35,7 +36,7 @@ const App: React.FC = () => {
       </Routes>
       <ButtonWsp />
       <Footer />
-    </>
+    </LanguageProvider>
   );
 };
 
