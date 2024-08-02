@@ -58,7 +58,7 @@ export const Contact: React.FC = () => {
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center mb-12">
                     <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contactanos</h2>
-                    <p className="mt-4 text-xl text-gray-600">Estamos aquí para ayudarte. Atenderemos tus consultas y te brindaremos la mejor asistencia posible.</p>
+                    <p className="mt-4 text-xl text-gray-600 hidden sm:block">Estamos aquí para ayudarte. Atenderemos tus consultas y te brindaremos la mejor asistencia posible.</p>
                 </div>
 
                 <div className="overflow-hidden bg-white rounded-lg shadow-xl">
