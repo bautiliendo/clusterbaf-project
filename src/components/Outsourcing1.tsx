@@ -13,7 +13,7 @@ export const Outsourcing1 = () => {
                     No es de extrañar que cualquier elemento diferencial que agregue valor a su compañía puede llegar a ser un factor decisivo para sus potenciales clientes.
                     Y es justo en este contexto donde entra en juego la gestión de proveedores o la gestión de compras y abastecimiento, una importante área estratégica que les ayudará a reducir costos y tiempo, que aumentará sus resultados financieros a corto y largo plazo
                 </p>
-                <div className='relative w-full max-w-md mx-auto animate-fade-left animate-ease-linear'>
+                <div className='relative w-full max-w-md mx-auto '>
                     <img
                         className="w-full rounded-lg shadow-xl"
                         src={Pilares}

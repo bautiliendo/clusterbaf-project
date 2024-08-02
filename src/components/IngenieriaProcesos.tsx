@@ -1,13 +1,13 @@
 import { CheckCircle } from 'lucide-react';
 import tecnicasLean from '../assets/tecnicaslean.webp'
-import ingProcesos from '../assets/IngenieriaProcesos.png'
+import ingProcesos from '../assets/IngenieriaProcesos.webp'
 
 export const IngenieriaProcesos = () => {
   return (
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid items-start grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24">
-          <div className="relative overflow-hidden pt-10  animate-fade-right animate-ease-linear">
+          <div className="relative overflow-hidden pt-10  sm:animate-fade-right sm:animate-ease-linear animate-fade animate-ease-linear">
             <div className="relative w-full max-w-2xl mx-auto">
               <img
                 className="w-full rounded-lg shadow-xl"
