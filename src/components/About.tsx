@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { MoreAbout } from './MoreAbout';
 import team from '../assets/Equipo.webp'
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 export const About: React.FC = () => {
-
     const [dropdown, setDropDown] = useState<boolean>(false);
+    const { language } = useLanguage();
+    // @ts-expect-error development
+    const t = translations[language].about;
 
     const handleDropdown = () => {
         setDropDown(!dropdown)
@@ -18,12 +22,12 @@ export const About: React.FC = () => {
                     <div className="py-12 px-4 sm:px-6 lg:px-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                             <div className="max-w-lg">
-                                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">¿Quiénes Somos?</h2>
+                                <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">{t.title}</h2>
                                 <p className="mt-4 text-gray-600 text-lg">
-                                    <strong>CLUSTERBAF</strong> es una empresa de servicios de ingeniería con más de 20 años de experiencia, formada por un equipo multidisciplinario de profesionales. Nos dedicamos a mejorar la competitividad de nuestros clientes, ofreciendo un servicio personalizado y de excelencia en todas las etapas de industrialización.
+                                    {t.description1}
                                 </p>
                                 <p className="mt-4 text-gray-600 text-lg">
-                                    Nuestro principal objetivo es poner en sus manos, Soluciones Integrales de Ingeniería con la máxima responsabilidad, profesionalidad y compromiso que nuestros Clientes se merecen.
+                                    {t.description2}
                                 </p>
                             </div>
                             <div className="mt-12 md:mt-0">
@@ -38,14 +42,14 @@ export const About: React.FC = () => {
                             <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
-                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Misión</span>
+                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">{t.missionTitle}</span>
                                     </div>
                                     <div className="flex-1 mt-6">
                                         <p className="text-xl font-semibold text-white mb-4">
-                                            Excelencia en ingeniería para nuestros clientes
+                                        {t.missionSubtitle}
                                         </p>
                                         <p className="text-base text-white">
-                                            Brindar un servicio responsable y eficiente, ofreciendo asesoramiento de calidad respondiendo a sus necesidades, que supere las expectativas de nuestros clientes. Nos apoyamos en la experiencia e integración del talento, conocimiento y experiencia de nuestro equipo profesional.
+                                            {t.missionDescription}
                                         </p>
                                     </div>
                                 </div>
@@ -54,14 +58,14 @@ export const About: React.FC = () => {
                             <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
-                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Visión</span>
+                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">{t.visionTitle}</span>
                                     </div>
                                     <div className="flex-1 mt-6">
                                         <p className="text-xl font-semibold text-white mb-4">
-                                            Líderes en consultoría industrial integrada
+                                            {t.visionSubtitle}
                                         </p>
                                         <p className="text-base text-white">
-                                            Ser un partner estratégico en el segmento de consultoría Industrial Integrada, destacándonos por satisfacer con profesionalismo las necesidades de nuestros clientes.
+                                            {t.visionDescription}
                                         </p>
                                     </div>
                                 </div>
@@ -70,26 +74,26 @@ export const About: React.FC = () => {
                             <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade-up">
                                 <div className="flex flex-col justify-between flex-1 px-5 py-6">
                                     <div className="flex-shrink-0">
-                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">Valores</span>
+                                        <span className="block text-lg font-bold tracking-widest text-jonquil uppercase">{t.valuesTitle}</span>
                                     </div>
                                     <div className="flex-1 mt-6">
                                         <p className="text-xl font-semibold text-white mb-4">
-                                            Principios que nos guían
+                                            {t.valuesDescription}
                                         </p>
                                         <ul className="text-base text-white list-disc pl-5">
-                                            <li>Compromiso</li>
-                                            <li>Experiencia y Conocimiento</li>
-                                            <li>Innovación y Desarrollo</li>
-                                            <li>Responsabilidad y Puntualidad</li>
-                                            <li>Soporte y Garantía</li>
-                                            <li>Acompañamiento</li>
+                                            <li>{t.valuesList[0]}</li>
+                                            <li>{t.valuesList[1]}</li>
+                                            <li>{t.valuesList[2]}</li>
+                                            <li>{t.valuesList[3]}</li>
+                                            <li>{t.valuesList[4]}</li>
+                                            <li>{t.valuesList[5]}</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <button className='my-10 flex mx-auto btn-custom' onClick={handleDropdown}>
-                            Conocer más
+                            {t.learnMore}
                             <FaChevronDown className={`ml-2 mt-1 transform ${dropdown ? 'rotate-180' : ''} transition-transform text-black`} />
                         </button>
                         {dropdown && (

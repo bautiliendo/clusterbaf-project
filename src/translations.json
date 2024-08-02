@@ -10,7 +10,7 @@
       "engineeringAndServices": "Ingeniería y Servicios",
       "about": "Nosotros",
       "contact": "Contacto",
-      "all" : "Todas las categorías"
+      "all": "Todas las categorías"
     },
     "productOptions": {
       "ingenieriaGestion": "Ingeniería en Gestión Integral de Calidad",
@@ -31,8 +31,81 @@
       "mondayToFriday": "Lunes a Viernes: 9:00 hs. a 18:00 hs.",
       "saturday": "Sábados: 9:00 hs. a 13:00 hs.",
       "socialNetworks": "Redes"
+    },
+    "about": {
+      "title": "¿Quiénes Somos?",
+      "description1": "CLUSTERBAF es una empresa de servicios de ingeniería con más de 20 años de experiencia, formada por un equipo multidisciplinario de profesionales. Nos dedicamos a mejorar la competitividad de nuestros clientes, ofreciendo un servicio personalizado y de excelencia en todas las etapas de industrialización.",
+      "description2": "Nuestro principal objetivo es poner en sus manos, Soluciones Integrales de Ingeniería con la máxima responsabilidad, profesionalidad y compromiso que nuestros Clientes se merecen.",
+      "missionTitle": "Misión",
+      "missionSubtitle": "Excelencia en ingeniería para nuestros clientes",
+      "missionDescription": "Brindar un servicio responsable y eficiente, ofreciendo asesoramiento de calidad respondiendo a sus necesidades, que supere las expectativas de nuestros clientes. Nos apoyamos en la experiencia e integración del talento, conocimiento y experiencia de nuestro equipo profesional.",
+      "visionTitle": "Visión",
+      "visionSubtitle": "Líderes en consultoría industrial integrada",
+      "visionDescription": "Ser un partner estratégico en el segmento de consultoría Industrial Integrada, destacándonos por satisfacer con profesionalismo las necesidades de nuestros clientes.",
+      "valuesTitle": "Valores",
+      "valuesDescription": "Principios que nos guían",
+      "valuesList": [
+        "Compromiso",
+        "Experiencia y Conocimiento",
+        "Innovación y Desarrollo",
+        "Responsabilidad y Puntualidad",
+        "Soporte y Garantía",
+        "Acompañamiento"
+      ],
+      "learnMore": "Conocer más"
+    },
+    "moreAbout": {
+      "commitment": "Compromiso con nuestros clientes",
+      "title": "Soluciones adaptadas a su medida",
+      "p1": "En CLUSTERBAF, contamos con reconocida experiencia en la industria manufacturera. Ofrecemos una amplia variedad de alternativas y soluciones a la problemática que las Empresas deben afrontar.",
+      "p2": "Cualquiera sea el tamaño de los Proyectos y Obras que lidere su empresa, nuestros servicios siempre se adaptarán a los requisitos de alcance, calidad y plazos requeridos, respaldando el trabajo con la misma seriedad, responsabilidad y entusiasmo con la que afrontamos cada compromiso"
+    },
+    "contact": {
+      "title": "Contactanos",
+      "subTitle": "Estamos aquí para ayudarte. Atenderemos tus consultas y te brindaremos la mejor asistencia posible.",
+      "h3": "Envianos un mensaje",
+      "label1": "Tu nombre",
+      "label1p": "Ingresa tu nombre",
+      "label2": "Tu email",
+      "label2p": "Ingresa tu email",
+      "label3": "Número de teléfono",
+      "label3p": "Ingresa tu número de teléfono",
+      "label4": "Nombre de la empresa",
+      "label4p": "Ingresa el nombre de tu empresa",
+      "label5": "Mensaje",
+      "label5p": "Ingresa aquí tu mensaje",
+      "button": "Enviar mensaje",
+      "h4": "Información de contacto",
+      "button2": "Sumate a nuestro equipo"
+    },
+    "joinTeam": {
+      "h3": "Sumate a nuestro equipo",
+      "messageP": "Cuéntanos un poco sobre ti",
+      "button": "Enviar solicitud",
+      "text": "Al hacer click, se abrira gmail con tus datos y el mensaje listos para ser enviados, recuerda adjuntar allí tu Curriculum."
+    },
+    "brands": {
+      "h2": "Marcas que confían en nosotros"
+    },
+    "ingYServ": {
+      "h2": "Ingeniería y Servicios",
+      "subtitle": "Ofrecemos soluciones personalizadas y de calidad para optimizar tus procesos y alcanzar el éxito en tu industria",
+      "ing1": "1- Ingeniería en Gestión Integral de Calidad",
+      "ing1sub": "Orientado al Acompañamiento de la Organización para desarrollar su Potencial, tendiendo como eje central los Sistemas de Gestión  (ISO 9001, ISO TS 16949, ISO 14001, ISO 45001, OHSAS 18001).",
+      "ing2": "2- Ingeniería de Procesos",
+      "ing2sub": "Con una amplia experiencia en industrialización de procesos productivos hacemos foco en los factores estratégicos que inciden en el mismo imprimiendo una visión integradora de toda la operación.",
+      "ing3": "3- Industrialización de Componentes",
+      "ing3sub": "El desarrollo de piezas o conjuntos es un proceso estratégico para afrontar la sustitución de importaciones, garantizar la calidad y los plazos de desarrollo son claves para integrar los componentes tercerizados a la producción",
+      "ing4": "4- Mantenimiento e Instalaciones Industriales",
+      "ing4sub": "Asesoramiento y servicio en planificación, seguimiento y ejecución de nuevos proyectos nuevos, ampliaciones, o mejoras de plantas industriales con un respaldo de más de 30 años de experiencia en el rubro.",
+      "ing5": "5- Outsourcing de Servicios",
+      "ing5sub": "Aumentar el costo fijo en una compañía es riesgoso, por ello, ofrecemos outsourcing de servicios, eventual o fijo, según la necesidad del cliente, para dar soporte ante la falta de recursos y reducir el riesgo de aumentar ese costo.",
+      "ing6": "6- Capacitaciones",
+      "ing6sub": "Mejora el funcionamiento colectivo del personal con una experiencia de formación a medida, desarrollada por un equipo de profesionales con el objetivo de convertir a sus colaboradores en un activo clave para la operación.",
+      "button": "Ver más"
     }
   },
+
   "en": {
     "hero": {
       "title": "CLUSTERBAF",
@@ -44,7 +117,7 @@
       "engineeringAndServices": "Engineering and Services",
       "about": "About Us",
       "contact": "Contact",
-      "all" : "All categories"
+      "all": "All categories"
     },
     "productOptions": {
       "ingenieriaGestion": "Comprehensive Quality Management Engineering",
@@ -65,6 +138,78 @@
       "mondayToFriday": "Monday to Friday: 9:00 am to 6:00 pm",
       "saturday": "Saturday: 9:00 am to 1:00 pm",
       "socialNetworks": "Social Networks"
+    },
+    "about": {
+      "title": "About Us",
+      "description1": "CLUSTERBAF is an engineering services company with over 20 years of experience, formed by a multidisciplinary team of professionals. We are dedicated to improving the competitiveness of our clients, offering personalized and excellent service in all stages of industrialization.",
+      "description2": "Our main goal is to provide you with Comprehensive Engineering Solutions with the utmost responsibility, professionalism, and commitment that our Clients deserve.",
+      "missionTitle": "Mission",
+      "missionSubtitle": "Engineering excellence for our clients",
+      "missionDescription": "To provide a responsible and efficient service, offering quality advice that meets your needs and exceeds our clients' expectations. We rely on the experience and integration of the talent, knowledge, and expertise of our professional team.",
+      "visionTitle": "Vision",
+      "visionSubtitle": "Leaders in integrated industrial consulting",
+      "visionDescription": "To be a strategic partner in the Integrated Industrial Consulting segment, standing out for professionally meeting the needs of our clients.",
+      "valuesTitle": "Values",
+      "valuesDescription": "Principles that guide us",
+      "valuesList": [
+        "Commitment",
+        "Experience and Knowledge",
+        "Innovation and Development",
+        "Responsibility and Punctuality",
+        "Support and Guarantee",
+        "Accompaniment"
+      ],
+      "learnMore": "Learn more"
+    },
+    "moreAbout": {
+      "commitment": "Commitment with our clients",
+      "title": "Tailored solutions for you",
+      "p1": "At CLUSTERBAF, we have recognized experience in the manufacturing industry. We offer a wide variety of alternatives and solutions to the problems that companies must face.",
+      "p2": "Regardless of the size of the projects and works led by your company, our services will always adapt to the required scope, quality, and deadlines, supporting the work with the same seriousness, responsibility, and enthusiasm with which we face each commitment"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subTitle": "We are here to help you. We will address your inquiries and provide you with the best assistance possible.",
+      "h3": "Send us a message",
+      "label1": "Name",
+      "label1p": "Enter your name",
+      "label2": "Email",
+      "label2p": "Enter your email",
+      "label3": "Phone number",
+      "label3p": "Enter your phone number",
+      "label4": "Company name",
+      "label4p": "Enter your company name",
+      "label5": "Message",
+      "label5p": "Write your message here",
+      "button": "Send message",
+      "h4": "Contact Information",
+      "button2": "Join our team"
+    },
+    "joinTeam": {
+      "h3": "Join our team",
+      "messageP": "Tell us about yourself",
+      "button": "Send application",
+      "text": "By clicking, Gmail will open with your details and message ready to be sent. Remember to attach your resume there."
+    },
+    "brands": {
+      "h2": "Brands that trust us"
+    },
+    "ingYServ": {
+      "h2": "Engineering and Services",
+      "subtitle": "We offer customized, quality solutions to optimize your processes and achieve success in your industry",
+      "ing1": "1- Comprehensive Quality Management Engineering",
+      "ing1sub": "Focused on supporting the Organization to develop its Potential, with Management Systems as the central axis (ISO 9001, ISO TS 16949, ISO 14001, ISO 45001, OHSAS 18001).",
+      "ing2": "2- Process Engineering",
+      "ing2sub": "With extensive experience in industrialization of production processes, we focus on the strategic factors that affect it, imprinting an integrative vision of the entire operation.",
+      "ing3": "3- Component Industrialization",
+      "ing3sub": "The development of parts or assemblies is a strategic process to address import substitution. Guaranteeing quality and development deadlines are key to integrating outsourced components into production",
+      "ing4": "4- Industrial Maintenance and Installations",
+      "ing4sub": "Advice and service in planning, monitoring, and execution of new projects, expansions, or improvements of industrial plants with over 30 years of experience in the field.",
+      "ing5": "5- Outsourcing Services",
+      "ing5sub": "Increasing fixed costs in a company is risky. Therefore, we offer service outsourcing, temporary or permanent, according to the client's needs, to provide support in the absence of resources and reduce the risk of increasing that cost.",
+      "ing6": "6- Training",
+      "ing6sub": "Improve the collective performance of personnel with a tailored training experience, developed by a team of professionals with the aim of turning your collaborators into a key asset for the operation.",
+      "button": "Learn more"
     }
   }
 }

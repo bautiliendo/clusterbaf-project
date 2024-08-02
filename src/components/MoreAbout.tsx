@@ -1,7 +1,13 @@
 import React from 'react';
 import Proceso from '../assets/proceso-estrategico.webp'
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 export const MoreAbout: React.FC = () => {
+    const { language } = useLanguage();
+    // @ts-expect-error development
+    const t = translations[language].moreAbout;
+
     return (
         <section className="py-10 sm:py-16 animate-fade-down animate-ease-linear">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -14,7 +20,7 @@ export const MoreAbout: React.FC = () => {
                                 <div className="px-10 py-6 hidden lg:flex ">
                                     <div className="flex items-center">
                                         <p className="flex-shrink-0 text-3xl font-bold text-jonquil sm:text-4xl">100%</p>
-                                        <p className="pl-6 text-xs font-medium text-black sm:text-lg">Compromiso con <br />nuestros clientes</p>
+                                        <p className="pl-6 text-xs font-medium text-black sm:text-lg">{t.commitment}</p>
                                     </div>
                                 </div>
                             </div>
@@ -22,10 +28,9 @@ export const MoreAbout: React.FC = () => {
                     </div>
 
                     <div>
-
-                        <h3 className="text-2xl font-extrabold text-gray-900 sm:text-4xl">Soluciones adaptadas a su medida</h3>
-                        <p className="mt-6 text-lg leading-relaxed text-gray-600">En <strong>CLUSTERBAF</strong>, contamos con reconocida experiencia en la industria manufacturera. Ofrecemos una amplia variedad de alternativas y soluciones a la problemática que las Empresas deben afrontar.</p>
-                        <p className="mt-2 text-lg leading-relaxed text-gray-600"> Cualquiera sea el tamaño de los Proyectos y Obras que lidere su empresa, nuestros servicios siempre se adaptarán a los requisitos de alcance, calidad y plazos requeridos, respaldando el trabajo con la misma seriedad, responsabilidad y entusiasmo con la que afrontamos cada compromiso</p>
+                        <h3 className="text-2xl font-extrabold text-gray-900 sm:text-4xl">{t.title}</h3>
+                        <p className="mt-6 text-lg leading-relaxed text-gray-600">{t.p1}</p>
+                        <p className="mt-2 text-lg leading-relaxed text-gray-600">{t.p2}</p>
                     </div>
                 </div>
             </div>

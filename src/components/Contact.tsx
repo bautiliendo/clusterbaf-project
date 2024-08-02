@@ -3,9 +3,14 @@ import { JoinTeam } from './JoinTeam';
 import emailjs from '@emailjs/browser';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import translations from '../translations.json';
+import { useLanguage } from '../hooks/useLanguage';
 
 export const Contact: React.FC = () => {
     const [showJoinTeamForm, setShowJoinTeamForm] = useState(false);
+    const { language } = useLanguage();
+       // @ts-expect-error development
+    const t = translations[language].contact;
 
     const toggleJoinTeamForm = () => {
         setShowJoinTeamForm(!showJoinTeamForm);
@@ -57,43 +62,43 @@ export const Contact: React.FC = () => {
             <ToastContainer />
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="max-w-2xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Contactanos</h2>
-                    <p className="mt-4 text-xl text-gray-600 hidden sm:block">Estamos aquí para ayudarte. Atenderemos tus consultas y te brindaremos la mejor asistencia posible.</p>
+                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">{t.title}</h2>
+                    <p className="mt-4 text-xl text-gray-600 hidden sm:block">{t.subTitle}</p>
                 </div>
 
                 <div className="overflow-hidden bg-white rounded-lg shadow-xl">
                     <div className="grid grid-cols-1 md:grid-cols-2">
                         <div className="p-6 sm:p-10 bg-rich_black text-white">
-                            <h3 className="text-3xl font-semibold mb-6">Envianos un mensaje</h3>
+                            <h3 className="text-3xl font-semibold mb-6">{t.h3}</h3>
 
                             <form ref={form} onSubmit={sendEmail} className="space-y-6">
                                 <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6">
                                     <div>
-                                        <label className="block text-sm font-medium">Tu nombre</label>
-                                        <input type="text" name="user_name" placeholder="Ingresa tu nombre" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">{t.label1}</label>
+                                        <input type="text" name="user_name" placeholder={t.label1p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-medium">Tu email</label>
-                                        <input type="email" name="user_email" placeholder="Ingresa tu email" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">{t.label2}</label>
+                                        <input type="email" name="user_email" placeholder={t.label2p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-medium">Número de teléfono</label>
-                                        <input type="tel" name="user_phone" placeholder="Ingresa tu teléfono" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">{t.label3}</label>
+                                        <input type="tel" name="user_phone" placeholder={t.label3p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
-                                        <label className="block text-sm font-medium">Nombre de la empresa</label>
-                                        <input type="text" name="user_company" placeholder="Ingresa el nombre de tu empresa" className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <label className="block text-sm font-medium">{t.label4}</label>
+                                        <input type="text" name="user_company" placeholder={t.label4p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-medium">Mensaje</label>
+                                    <label className="block text-sm font-medium">{t.label5}</label>
                                     <textarea
                                         name="message"
-                                        placeholder="Escribe tu mensaje aquí"
+                                        placeholder={t.label5p}
                                         rows={4}
                                         className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent resize-none"
                                     ></textarea>
@@ -101,14 +106,14 @@ export const Contact: React.FC = () => {
 
                                 <div>
                                     <button type="submit" className="btn-custom" value="Send">
-                                        Enviar mensaje
+                                        {t.button}
                                     </button>
                                 </div>
                             </form>
                         </div>
 
                         <div className="p-6 sm:p-10 bg-gray-50">
-                            <h4 className="text-2xl font-bold text-gray-900 mb-6">Información de contacto</h4>
+                            <h4 className="text-2xl font-bold text-gray-900 mb-6">{t.h4}</h4>
 
                             <div className="space-y-6 font-semibold text-xl">
                                 <div className="flex items-start">
@@ -146,7 +151,7 @@ export const Contact: React.FC = () => {
                                     </svg>
                                     <div className="ml-3">
                                         <p onClick={toggleJoinTeamForm} className="text-gray-700 hover:text-jonquil transition-colors duration-300 hover:cursor-pointer">
-                                            Sumate a nuestro equipo
+                                            {t.button2}
                                         </p>
                                     </div>
                                 </div>

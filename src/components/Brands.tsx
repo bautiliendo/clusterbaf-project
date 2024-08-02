@@ -16,6 +16,8 @@ import Entech from '../assets/entech.webp';
 import Ame from '../assets/ame.webp';
 import Eslava from '../assets/eslava.webp';
 import { BrandLogoProps } from '../types';
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 const brandData = [
     { name: 'Iveco', logo: Iveco },
@@ -45,11 +47,14 @@ const BrandLogo: React.FC<BrandLogoProps> = ({ name, logo }) => (
 );
 
 export const Brands = () => {
+    const { language } = useLanguage();
+    // @ts-expect-error development
+    const t = translations[language].brands;
     return (
         <section className="py-12 bg-gray-50">
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <h2 className="mb-8 text-3xl font-extrabold text-center text-gray-900 sm:text-4xl">
-                    Confían en nosotros
+                    {t.h2}
                 </h2>
                 <Marquee className="py-4" gradient={false} speed={40}>
                     <div className="flex items-center space-x-8">

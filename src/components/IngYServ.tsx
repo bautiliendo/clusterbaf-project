@@ -1,16 +1,20 @@
 import { AiOutlineBarChart, AiOutlineSetting, AiOutlineBuild, AiOutlineTool, AiOutlineTeam, AiOutlineBook } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 export const IngYServ: React.FC = () => {
-
+    const { language } = useLanguage();
+    // @ts-expect-error development
+    const t = translations[language].ingYServ;
     const navigate = useNavigate();
 
     return (
         <section className="py-32 bg-white">
             <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div className="text-center">
-                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Ingeniería y Servicios</h2>
-                    <p className="mt-4 text-xl text-gray-600">Ofrecemos soluciones personalizadas y de calidad para optimizar tus procesos y alcanzar el éxito en tu industria.</p>
+                    <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">{t.h2}</h2>
+                    <p className="mt-4 text-xl text-gray-600">{t.subtitle}</p>
 
                 </div>
 
@@ -18,13 +22,13 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl " >
                         <AiOutlineBarChart className="mx-auto h-12 w-12 text-jonquil" />
 
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>1- Ingeniería en Gestión Integral de Calidad</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >Orientado al Acompañamiento de la Organización para desarrollar su Potencial, tendiendo como eje central los Sistemas de Gestión  (ISO 9001, ISO TS 16949, ISO 14001, ISO 45001, OHSAS 18001).</p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing1}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing1sub}</p>
                         <button
                             className="btn-custom w-full justify-center"
                             onClick={() => navigate('/ingenieriaGestion')}
                         >
-                            Ver más
+                            {t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
@@ -35,11 +39,11 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl">
 
                         <AiOutlineSetting className="mx-auto h-12 w-12 text-jonquil" />
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>2- Ingeniería de Procesos</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >Con una amplia experiencia en industrialización de procesos productivos hacemos foco en los factores estratégicos que inciden en el mismo imprimiendo una visión integradora de toda la operación.</p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing2}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing2sub}</p>
                         <button className="btn-custom w-full justify-center"
                             onClick={() => navigate('/ingenieriaProcesos')}
-                        >Ver más
+                        >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
@@ -49,11 +53,11 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl">
 
                         <AiOutlineBuild className="mx-auto h-12 w-12 text-jonquil" />
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>3- Industrialización de Componentes</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >El desarrollo de piezas o conjuntos es un proceso estratégico para afrontar la sustitución de importaciones, garantizar la calidad y los plazos de desarrollo son claves para integrar los componentes tercerizados a la producción</p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing3}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing3sub}</p>
                         <button className="btn-custom w-full justify-center"
                             onClick={() => navigate('/industrializacion')}
-                        >Ver más
+                        >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
@@ -63,11 +67,11 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl">
 
                         <AiOutlineTool className="mx-auto h-12 w-12 text-jonquil" />
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>4- Mantenimiento e Instalaciones Industriales</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >Asesoramiento y servicio en planificación, seguimiento y ejecución de nuevos proyectos nuevos, ampliaciones, o mejoras de plantas industriales con un respaldo de más de 30 años de experiencia en el rubro. </p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing4}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing4sub}</p>
                         <button className="btn-custom w-full justify-center"
                             onClick={() => navigate('/mantenimiento')}
-                        >Ver más
+                        >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
@@ -77,11 +81,11 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl">
 
                         <AiOutlineTeam className="mx-auto h-12 w-12 text-jonquil" />
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>5- Outsourcing de Servicios</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >Aumentar el costo fijo en una compañía es riesgoso, por ello, ofrecemos outsourcing de servicios, eventual o fijo, según la necesidad del cliente, para dar soporte ante la falta de recursos y reducir el riesgo de aumentar ese costo.</p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing5}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing5sub}</p>
                         <button className="btn-custom w-full justify-center"
                             onClick={() => navigate('/outsourcing')}
-                        >Ver más
+                        >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
@@ -91,11 +95,11 @@ export const IngYServ: React.FC = () => {
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl">
 
                         <AiOutlineBook className="mx-auto h-12 w-12 text-jonquil" />
-                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>6- Capacitaciones</h3>
-                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >Mejora el funcionamiento colectivo del personal con una experiencia de formación a medida, desarrollada por un equipo de profesionales con el objetivo de convertir a sus colaboradores en un activo clave para la operación.</p>
+                        <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing6}</h3>
+                        <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing6sub}</p>
                         <button className="btn-custom w-full justify-center"
                             onClick={() => navigate('/capacitaciones')}
-                        >Ver más
+                        >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
                             </svg>
