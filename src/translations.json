@@ -5,6 +5,32 @@
       "description1": "Con más de 20 años de experiencia, ofrecemos soluciones integrales de ingeniería para mejorar la competitividad de su empresa.",
       "description2": "Brindamos un servicio personalizado y de excelencia en todas las etapas de industrialización.",
       "ctaButton": "Contáctenos ahora"
+    },
+    "navbar": {
+      "engineeringAndServices": "Ingeniería y Servicios",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "all" : "Todas las categorías"
+    },
+    "productOptions": {
+      "ingenieriaGestion": "Ingeniería en Gestión Integral de Calidad",
+      "ingenieriaProcesos": "Ingeniería de Procesos",
+      "industrializacion": "Industrialización de Componentes",
+      "mantenimiento": "Mantenimiento e Instalaciones Industriales",
+      "outsourcing": "Outsourcing de servicios",
+      "capacitaciones": "Capacitaciones"
+    },
+    "footer": {
+      "copyright": "© Copyright 2024, Todos los Derechos Reservados por Clusterbaf. (CREADO POR)",
+      "downloadBrochure": "Descargar Brochure Institucional",
+      "navigation": "Navegación",
+      "engineeringAndServices": "Ingeniería y servicios",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "businessHours": "Horarios de atención",
+      "mondayToFriday": "Lunes a Viernes: 9:00 hs. a 18:00 hs.",
+      "saturday": "Sábados: 9:00 hs. a 13:00 hs.",
+      "socialNetworks": "Redes"
     }
   },
   "en": {
@@ -13,6 +39,32 @@
       "description1": "With over 20 years of experience, we offer comprehensive engineering solutions to improve your company's competitiveness.",
       "description2": "We provide personalized and excellent service in all stages of industrialization.",
       "ctaButton": "Contact us now"
+    },
+    "navbar": {
+      "engineeringAndServices": "Engineering and Services",
+      "about": "About Us",
+      "contact": "Contact",
+      "all" : "All categories"
+    },
+    "productOptions": {
+      "ingenieriaGestion": "Comprehensive Quality Management Engineering",
+      "ingenieriaProcesos": "Process Engineering",
+      "industrializacion": "Component Industrialization",
+      "mantenimiento": "Industrial Maintenance and Installations",
+      "outsourcing": "Outsourcing Services",
+      "capacitaciones": "Training"
+    },
+    "footer": {
+      "copyright": "© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)",
+      "downloadBrochure": "Download Institutional Brochure",
+      "navigation": "Navigation",
+      "engineeringAndServices": "Engineering and services",
+      "about": "About Us",
+      "contact": "Contact",
+      "businessHours": "Business Hours",
+      "mondayToFriday": "Monday to Friday: 9:00 am to 6:00 pm",
+      "saturday": "Saturday: 9:00 am to 1:00 pm",
+      "socialNetworks": "Social Networks"
     }
   }
 }

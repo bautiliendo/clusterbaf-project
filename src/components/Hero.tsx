@@ -8,6 +8,7 @@ import { useLanguage } from '../hooks/useLanguage';
 export const Hero: React.FC = () => {
   const scrollToSection = useScrollNavigation();
   const { language } = useLanguage();
+   // @ts-expect-error development
   const t = translations[language].hero;
 
   return (

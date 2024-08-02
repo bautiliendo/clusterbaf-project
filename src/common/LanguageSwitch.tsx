@@ -11,12 +11,19 @@ export const LanguageSwitch: React.FC = () => {
   };
 
   return (
-    <button onClick={toggleLanguage} className="flex items-center px-4 py-2  text-white rounded">
-      <img
-        src={language === 'es' ? USFlag : SpainFlag}
-        alt={language === 'es' ? 'United States' : 'España'}
-        className={language === 'es' ? 'w-9' : 'w-9 h-4'}
-      />
-    </button>
+    <div className='flex gap-1'>
+      <button
+        onClick={toggleLanguage}
+        className="relative flex items-center justify-center w-10 h-6 rounded bg-cover bg-center text-white font-bold transition-opacity hover:opacity-80"
+        style={{
+          backgroundImage: `url(${language === 'es' ? SpainFlag : USFlag})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          opacity: 0.8
+        }}
+      >
+      </button>
+      <span className="relative z-10">{language === 'es' ? 'ESP' : 'ENG'}</span>
+    </div>
   );
 };

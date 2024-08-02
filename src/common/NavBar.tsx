@@ -6,11 +6,18 @@ import { FaChevronDown } from "react-icons/fa";
 import { useScrollNavigation } from "../helpers/ScrollToSection";
 import { ProductOption } from "../types";
 import { LanguageSwitch } from "./LanguageSwitch";
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 export const NavBar: React.FC = () => {
   const [nav, setNav] = useState<boolean>(false);
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const scrollToSection = useScrollNavigation();
+  const { language } = useLanguage();
+     // @ts-expect-error development
+  const t = translations[language].navbar;
+     // @ts-expect-error development
+  const tProductOptions = translations[language].productOptions;
 
   const handleNav = () => {
     setNav(!nav)
@@ -21,12 +28,12 @@ export const NavBar: React.FC = () => {
   }
 
   const productOptionsRoutes: Record<ProductOption, string> = {
-    "Ingeniería en Gestión Integral de Calidad": "/ingenieriaGestion",
-    "Ingeniería de Procesos": "/ingenieriaProcesos",
-    "Industrialización de Componentes": "/industrializacion",
-    "Mantenimiento e Instalaciones Industriales": "/mantenimiento",
-    "Outsourcing de servicios": "/outsourcing",
-    "Capacitaciones": "/capacitaciones"
+    "ingenieriaGestion": "/ingenieriaGestion",
+    "ingenieriaProcesos": "/ingenieriaProcesos",
+    "industrializacion": "/industrializacion",
+    "mantenimiento": "/mantenimiento",
+    "outsourcing": "/outsourcing",
+    "capacitaciones": "/capacitaciones"
   };
 
   const productOptions: ProductOption[] = Object.keys(productOptionsRoutes) as ProductOption[];
@@ -41,7 +48,7 @@ export const NavBar: React.FC = () => {
         <div className="flex flex-grow justify-end items-center">
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
             <li className='relative group'>
-              
+
               <button
                 className='flex items-center hover:scale-[1.04] border-none px-4'
                 onMouseEnter={() => setDropdownOpen(true)}
@@ -50,7 +57,7 @@ export const NavBar: React.FC = () => {
                   scrollToSection('ingYServ')
                 }}
               >
-                Ingeniería y Servicios
+                {t.engineeringAndServices}
                 <FaChevronDown className={`ml-2 mt-1 transform ${dropdownOpen ? 'rotate-180' : ''} transition-transform text-jonquil`} />
               </button>
               {dropdownOpen && (
@@ -66,7 +73,7 @@ export const NavBar: React.FC = () => {
                         to={productOptionsRoutes[option]}
                         className="block px-4 py-2 text-sm  text-white "
                       >
-                        <p className="hover:scale-[1.02]">{index + 1}- {option}</p>
+                        <p className="hover:scale-[1.02]">{index + 1}- {tProductOptions[option]}</p>
                       </Link>
                     ))}
                   </div>
@@ -74,10 +81,10 @@ export const NavBar: React.FC = () => {
               )}
             </li>
             <li className='hover:scale-[1.04]'>
-              <button onClick={() => scrollToSection('about')}>Nosotros</button>
+              <button onClick={() => scrollToSection('about')}>{t.about}</button>
             </li>
             <li className='hover:scale-[1.04]'>
-              <button onClick={() => scrollToSection('contact')}>Contacto</button>
+              <button onClick={() => scrollToSection('contact')}>{t.contact}</button>
             </li>
             <li className=''><LanguageSwitch /></li>
           </ul>
@@ -107,18 +114,18 @@ export const NavBar: React.FC = () => {
                   onClick={toggleDropdown}
                   className="flex text-center mx-auto border-none hover:underline uppercase"
                 >
-                  Ingeniería y Servicios
+                  {t.engineeringAndServices}
                   <FaChevronDown className={`ml-2 mt-1 transform ${dropdownOpen ? 'rotate-180' : ''} transition-transform text-jonquil`} />
                 </button>
                 {dropdownOpen && (
                   <>
                     <Link
-                          to={'/ingYServ'}
-                          className="block py-2 px-4 text-sm text-left"
-                          onClick={handleNav}
-                        >
-                          <p className="hover:scale-[1.02]">Todos</p>
-                        </Link>
+                      to={'/ingYServ'}
+                      className="block py-2 px-4 text-sm text-left"
+                      onClick={handleNav}
+                    >
+                      <p className="">{t.all}</p>
+                    </Link>
                     <div className="mt-2 space-y-2">
                       {productOptions.map((option, index) => (
                         <Link
@@ -127,7 +134,7 @@ export const NavBar: React.FC = () => {
                           className="block py-2 px-4 text-sm text-left"
                           onClick={handleNav}
                         >
-                          <p className="hover:scale-[1.02]">{index + 1}- {option}</p>
+                          <p className="hover:scale-[1.02]">{index + 1}- {tProductOptions[option]}</p>
                         </Link>
                       ))}
                     </div>
@@ -135,10 +142,10 @@ export const NavBar: React.FC = () => {
                 )}
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('about'); handleNav() }}>Nosotros</button>
+                <button onClick={() => { scrollToSection('about'); handleNav() }}>{t.about}</button>
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('contact'); handleNav() }}>Contacto</button>
+                <button onClick={() => { scrollToSection('contact'); handleNav() }}>{t.contact}</button>
               </li>
               <li className='p-4 mx-auto'><LanguageSwitch /></li>
             </ul>

@@ -4,9 +4,14 @@ import { handleGmail, handleLinkedIn, handleWhatsapp } from '../helpers/handleLi
 import { useScrollNavigation } from '../helpers/ScrollToSection';
 import { FaFileDownload } from "react-icons/fa";
 import Brochure from '../assets/Brochure Institucional Clusterbaf.pdf'
+import { useLanguage } from '../hooks/useLanguage';
+import translations from '../translations.json';
 
 export const Footer: React.FC = () => {
     const scrollToSection = useScrollNavigation();
+    const { language } = useLanguage();
+       // @ts-expect-error development
+    const t = translations[language].footer;
 
     return (
         <footer className="py-10 bg-rich_black sm:pt-16 lg:pt-24">
@@ -14,32 +19,32 @@ export const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
                         <img className="mb-4 w-full max-w-80 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
-                        <p className="text-sm text-white mb-4 font-semibold">© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)</p>
+                        <p className="text-sm text-white mb-4 font-semibold">{t.copyright}</p>
                         <div className='flex gap-1 hover:cursor-pointer'>
-                            <a href={Brochure} onClick={(e) => { e.preventDefault(); window.open(Brochure, '_blank'); }} className="text-sm font-semibold text-jonquil">Descargar Brochure Institucional</a>
+                            <a href={Brochure} onClick={(e) => { e.preventDefault(); window.open(Brochure, '_blank'); }} className="text-sm font-semibold text-jonquil">{t.downloadBrochure}</a>
                             <FaFileDownload className='text-jonquil' size={20} />
                         </div>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold text-white mb-4">Navegación</h3>
+                        <h3 className="text-lg font-bold text-white mb-4">{t.navigation}</h3>
                         <ul className="space-y-2">
-                            <li><a onClick={() => { scrollToSection('ingYServ') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Ingeniería y servicios</a></li>
-                            <li><a onClick={() => { scrollToSection('about') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Nosotros</a></li>
-                            <li><a onClick={() => { scrollToSection('contact') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">Contacto</a></li>
+                            <li><a onClick={() => { scrollToSection('ingYServ') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">{t.engineeringAndServices}</a></li>
+                            <li><a onClick={() => { scrollToSection('about') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">{t.about}</a></li>
+                            <li><a onClick={() => { scrollToSection('contact') }} className="text-white hover:text-opacity-80 transition-colors hover:cursor-pointer">{t.contact}</a></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold text-white mb-4">Horarios de atención</h3>
+                        <h3 className="text-lg font-bold text-white mb-4">{t.businessHours}</h3>
                         <ul className="space-y-2">
-                            <li className="text-white">Lunes a Viernes: 9:00 hs. a 18:00 hs.</li>
-                            <li className="text-white">Sábados: 9:00 hs. a 13:00 hs.</li>
+                            <li className="text-white">{t.mondayToFriday}</li>
+                            <li className="text-white">{t.saturday}</li>
                         </ul>
                     </div>
 
                     <div>
-                        <h3 className="text-lg font-bold text-white mb-4">Redes</h3>
+                        <h3 className="text-lg font-bold text-white mb-4">{t.socialNetworks}</h3>
                         <div className="flex space-x-4">
                             <button onClick={handleLinkedIn} title="LinkedIn" className="text-white hover:text-blue-400 transition-colors">
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
