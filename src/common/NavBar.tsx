@@ -106,7 +106,7 @@ export const NavBar: React.FC = () => {
           }} className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-50 bg-rich_black border-r-gray-900 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%]'}>
             <div className="flex items-center justify-between mx-4">
               <img src={Logo} className="h-24 cursor-pointer" onClick={() => { scrollToSection('about'); handleNav() }} alt="Logo Clusterbaf" />
-              <AiOutlineClose size={25} onClick={handleNav} className="" />
+              <AiOutlineClose size={25} onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}} className="" />
             </div>
             <ul className="p-4 font-bold flex flex-col text-center">
               <li className='p-4 border-b border-gray-600'>
@@ -122,7 +122,7 @@ export const NavBar: React.FC = () => {
                     <Link
                       to={'/ingYServ'}
                       className="block py-2 px-4 text-sm text-left"
-                      onClick={handleNav}
+                      onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}}
                     >
                       <p className="">{t.all}</p>
                     </Link>
@@ -132,7 +132,7 @@ export const NavBar: React.FC = () => {
                           key={index}
                           to={productOptionsRoutes[option]}
                           className="block py-2 px-4 text-sm text-left"
-                          onClick={handleNav}
+                          onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}}
                         >
                           <p className="hover:scale-[1.02]">{index + 1}- {tProductOptions[option]}</p>
                         </Link>
