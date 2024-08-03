@@ -90,7 +90,7 @@
     "ingYServ": {
       "h2": "Ingeniería y Servicios",
       "subtitle": "Ofrecemos soluciones personalizadas y de calidad para optimizar tus procesos y alcanzar el éxito en tu industria",
-      "ing1": "1- Ingeniería en Gestión Integral de Calidad",
+      "ing1": "1- Engineering in Integral Quality Management",
       "ing1sub": "Orientado al Acompañamiento de la Organización para desarrollar su Potencial, tendiendo como eje central los Sistemas de Gestión  (ISO 9001, ISO TS 16949, ISO 14001, ISO 45001, OHSAS 18001).",
       "ing2": "2- Ingeniería de Procesos",
       "ing2sub": "Con una amplia experiencia en industrialización de procesos productivos hacemos foco en los factores estratégicos que inciden en el mismo imprimiendo una visión integradora de toda la operación.",
@@ -103,6 +103,92 @@
       "ing6": "6- Capacitaciones",
       "ing6sub": "Mejora el funcionamiento colectivo del personal con una experiencia de formación a medida, desarrollada por un equipo de profesionales con el objetivo de convertir a sus colaboradores en un activo clave para la operación.",
       "button": "Ver más"
+    },
+    "qualityEng": {
+      "h2": "Ingeniería en Gestión Integral de Calidad",
+      "list": [
+        "Consultoría, Capacitación e Implementación de Sistemas de Gestión (ISO 9001, ISO TS16949, ISO14001, ISO45001, OHSAS 18001)",
+        "Auditorías de Sistema y Procesos Internos",
+        "Certificación de Normas ISO",
+        "Gestión de Indicadores (KPI) y Mejora Continua (PDCA)",
+        "Capacitación en Herramientas de análisis y resolución de No Conformidades",
+        "Elaboración de Documentación",
+        "Evaluación, Desarrollo y Seguimiento de Proveedores"
+      ]
+    },
+    "processEng": {
+      "h2": "Ingeniería de Procesos",
+      "list": [
+        "Análisis, Desarrollo y Optimización de Procesos",
+        "Implementando y Capacitando en Herramientas Lean",
+        "Gestión de la Cadena de Valor",
+        "Programación de la Producción",
+        "Estudio de Métodos y Tiempos",
+        "Simulación de Procesos",
+        "Redefinición de Procesos Productivos y de Servicios",
+        "Propuestas de Layout"
+      ],
+      "h3": "Metodología aplicada",
+      "h4": "Beneficios",
+      "p1": "Se exploran las causas y efectos de problemas transversales en los procesos de forma integral",
+      "p2": "Se crea un plan de acción acorde a las necesidades y problemas específicos del cliente",
+      "p3": "Se logra la estandarización de las acciones para convertirlas en parte operativa de la empresa"
+    },
+    "componentInd": {
+      "h2": "Industrialización de componentes",
+      "list": [
+        "I - Análisis, Desarrollo y Optimización de Procesos",
+        "II - Implementando y Capacitando en Herramientas Lean",
+        "III - Gestión de la Cadena de Valor",
+        "IV - Programación de la Producción",
+        "V - Estudio de Métodos y Tiempos",
+        "VI - Simulación de Procesos",
+        "VII - Redefinición de Procesos Productivos y de Servicios",
+        "VIII - Propuestas de Lay Out"
+      ],
+      "p": "Estamos presentes en todas las etapas del ciclo de vida del producto, desde su concepción inicial hasta el final de su vida útil."
+    },
+    "maintenance": {
+      "h2": "Mantenimiento e Instalaciones Industriales",
+      "list": [
+        "Construcciones y Mantenimiento Civiles",
+        "Mantenimiento Edilicio Industrial",
+        "Instalaciones Industriales(Hidráulicas, Neumáticas, Aire Comprimido, Eléctricas, etc.)",
+        "Automatizaciones",
+        "Construcciones Metálicas en General",
+        "Fabricación de Dispositivos Productivos, Logísticos, Calidad, etc",
+        "Servicio de Pintura Industrial",
+        "Montajes Industriales"
+      ],
+      "h3": "Estandar Handling",
+      "list2": [
+        "Nos especializamos en satisfacer las necesidades del mercado en la prestación de Soluciones para el movimiento de materiales, de la más alta calidad.",
+        "Así podemos cumplir con los más exigentes requerimientos de la industria, adecuando, adaptando y ajustando los productos a los proyectos desarrollados por el departamento de Ingeniería, garantizando la funcionalidad y rendimiento de los mismos, antes de proceder al montaje en las plantas productivas.",
+        "Ejecutamos proyecto e instalación de equipamiento para handling logístico y de manufactura acorde a las necesidades de la operación."
+      ],
+      "h4": "OFRECEMOS",
+      "li1": "Diseño",
+      "li2": "Instalación y Montaje",
+      "li3": "Inspección y Auditoría",
+      "li4": "Mantenimiento"
+    },
+    "training": {
+      "h2": "Capacitaciones",
+      "list": [
+        "Gestión de Calidad Total",
+        "Herramientas de Análisis y resolución de problemas",
+        "Gestión por Indicadores",
+        "Ingeniería de Procesos",
+        "Ingeniería Logística",
+        "Herramientas Lean (5S, TPM, VSM, SMED, Six Sigma, Kaizen, Trabajo estandarizado, JIT, KANBAN)",
+        "Gestión de Compras",
+        "Diseño Asistido (Catia, Solidworks)",
+        "Matricería - Diseño, Puesta a punto y Mantenimiento"
+      ],
+      "span1": "¿Qué ofrecemos?",
+      "p1": "Un servicio de capacitación profesional Certificada, adaptado a las necesidades de las empresas para aportar valor al staff de empleados",
+      "span2": "¿Cómo?",
+      "p2": "Asesorando, diseñando, produciendo y evaluando la propuesta de capacitación junto al referente que la empresa disponga en el área.s"
     }
   },
 
@@ -120,7 +206,7 @@
       "all": "All categories"
     },
     "productOptions": {
-      "ingenieriaGestion": "Comprehensive Quality Management Engineering",
+      "ingenieriaGestion": "Engineering in Integral Quality Management",
       "ingenieriaProcesos": "Process Engineering",
       "industrializacion": "Component Industrialization",
       "mantenimiento": "Industrial Maintenance and Installations",
@@ -197,7 +283,7 @@
     "ingYServ": {
       "h2": "Engineering and Services",
       "subtitle": "We offer customized, quality solutions to optimize your processes and achieve success in your industry",
-      "ing1": "1- Comprehensive Quality Management Engineering",
+      "ing1": "1- Engineering in Integral Quality Management",
       "ing1sub": "Focused on supporting the Organization to develop its Potential, with Management Systems as the central axis (ISO 9001, ISO TS 16949, ISO 14001, ISO 45001, OHSAS 18001).",
       "ing2": "2- Process Engineering",
       "ing2sub": "With extensive experience in industrialization of production processes, we focus on the strategic factors that affect it, imprinting an integrative vision of the entire operation.",
@@ -210,6 +296,92 @@
       "ing6": "6- Training",
       "ing6sub": "Improve the collective performance of personnel with a tailored training experience, developed by a team of professionals with the aim of turning your collaborators into a key asset for the operation.",
       "button": "Learn more"
+    },
+    "qualityEng": {
+      "h2": "Engineering in Integral Quality Management",
+      "list": [
+        "Consulting, Training and Implementation of Management Systems (ISO 9001, ISO TS16949, ISO14001, ISO45001, OHSAS 18001)",
+        "System and Internal Process Audits",
+        "ISO Standards Certification",
+        "Key Performance Indicator (KPI) Management and Continuous Improvement (PDCA)",
+        "Training in Analysis Tools and Non-Conformity Resolution",
+        "Documentation Preparation",
+        "Supplier Evaluation, Development and Monitoring"
+      ]
+    },
+    "processEng": {
+      "h2": "Process Engineering",
+      "list": [
+        "Analysis, Development and Optimization of Processes",
+        "Implementing and Training in Lean Tools",
+        "Value Chain Management",
+        "Production Scheduling",
+        "Methods and Time Study",
+        "Process Simulation",
+        "Redefinition of Production and Service Processes",
+        "Layout Proposals"
+      ],
+      "h3": "Applied Methodology",
+      "h4": "Benefits",
+      "p1": "The causes and effects of cross-cutting problems in processes are explored comprehensively",
+      "p2": "An action plan is created according to the specific needs and problems of the client",
+      "p3": "Standardization of actions is achieved to make them an operational part of the company"
+    },
+    "componentInd": {
+      "h2": "Component Industrialization",
+      "list": [
+        "I - Analysis, Development and Optimization of Processes",
+        "II - Implementing and Training in Lean Tools",
+        "III - Value Chain Management",
+        "IV - Production Scheduling",
+        "V - Methods and Time Study",
+        "VI - Process Simulation",
+        "VII - Redefinition of Production and Service Processes",
+        "VIII - Layout Proposals"
+      ],
+      "p": "We are present in all stages of the product lifecycle, from its initial conception to the end of its useful life."
+    },
+    "maintenance": {
+      "h2": "Industrial Maintenance and Facilities",
+      "list": [
+        "Civil Construction and Maintenance",
+        "Industrial Building Maintenance",
+        "Industrial Installations (Hydraulic, Pneumatic, Compressed Air, Electrical, etc.)",
+        "Automations",
+        "General Metal Constructions",
+        "Manufacturing of Productive, Logistic, Quality Devices, etc.",
+        "Industrial Painting Service",
+        "Industrial Assemblies"
+      ],
+      "h3": "Standard Handling",
+      "h4": "WE OFFER",
+      "list2": [
+        "We specialize in meeting market needs by providing high-quality Material Handling Solutions.",
+        "Thus, we can meet the most demanding requirements of the industry, adapting and adjusting products to projects developed by the Engineering department, ensuring their functionality and performance before proceeding with installation in production plants.",
+        "We execute projects and installation of equipment for logistic and manufacturing handling according to the operation's needs."
+      ],
+      "li1": "Design",
+      "li2": "Installation and Assembly",
+      "li3": "Inspection and Auditing",
+      "li4": "Maintenance"
+    },
+    "training": {
+      "h2": "Training",
+      "list": [
+        "Total Quality Management",
+        "Problem Analysis and Resolution Tools",
+        "Management by Indicators",
+        "Process Engineering",
+        "Logistics Engineering",
+        "Lean Tools (5S, TPM, VSM, SMED, Six Sigma, Kaizen, Standardized Work, JIT, KANBAN)",
+        "Procurement Management",
+        "Computer-Aided Design (Catia, Solidworks)",
+        "Die Making - Design, Set-up and Maintenance"
+      ],
+      "span1": "What do we offer?",
+      "p1": "A Certified professional training service, adapted to the needs of companies to add value to their staff",
+      "span2": "How?",
+      "p2": "By advising, designing, producing and evaluating the training proposal together with the company's designated representative in the area."
     }
   }
 }

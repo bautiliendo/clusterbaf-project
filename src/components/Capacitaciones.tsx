@@ -1,7 +1,13 @@
 import { CheckCircle } from "lucide-react"
 import capacitaciones from '../assets/Capacitaciones.webp'
+import { useLanguage } from "../hooks/useLanguage"
+import translations from '../translations.json';
 
 export const Capacitaciones = () => {
+  const { language } = useLanguage();
+  // @ts-expect-error development
+  const t = translations[language].training;
+
   return (
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -17,20 +23,10 @@ export const Capacitaciones = () => {
 
           <div className="space-y-8">
             <h2 className="text-4xl font-extrabold text-rich_black-500 sm:text-5xl">
-              Capacitaciones
+              {t.h2}
             </h2>
             <ul className="space-y-4">
-              {[
-                "Gestión de Calidad Total",
-                "Herramientas de Análisis y resolución de problemas",
-                "Gestión por Indicadores",
-                "Ingeniería de Procesos",
-                "Ingeniería Logística",
-                "Herramientas Lean (5S, TPM, VSM, SMED, Six Sigma, Kaizen, Trabajo estandarizado, JIT, KANBAN)",
-                "Gestión de Compras",
-                "Diseño Asistido (Catia, Solidworks)",
-                "Matricería - Diseño, Puesta a punto y Mantenimiento"
-              ].map((item, index) => (
+              {t.list.map((item: string, index: number) => (
                 <li key={index} className="flex items-start">
                   <CheckCircle className="w-6 h-6 mr-2 text-jonquil-500 flex-shrink-0 mt-1" />
                   <p className="text-base text-rich_black-400">{item}</p>
@@ -46,10 +42,10 @@ export const Capacitaciones = () => {
           <div className="flex flex-col overflow-hidden bg-rich_black shadow-md rounded-xl animate-fade animate-ease-linear">
             <div className="flex flex-col justify-between flex-1 px-5 py-6">
               <div className="flex-shrink-0">
-                <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">¿Qué ofrecemos? </span>
+                <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">{t.span1}</span>
               </div>
               <p className="text-base text-white">
-                Un servicio de capacitación profesional Certificada, adaptado a las necesidades de las empresas para aportar valor al staff de empleados
+               {t.p1}
               </p>
             </div>
           </div>
@@ -57,10 +53,10 @@ export const Capacitaciones = () => {
           <div className="flex flex-col overflow-hidden bg-rich_black shadow-xl rounded-xl animate-fade animate-ease-linear">
             <div className="flex flex-col justify-between flex-1 px-5 py-6">
               <div className="flex-shrink-0">
-                <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">¿Cómo?</span>
+                <span className="block text-lg font-bold tracking-widest text-jonquil uppercase pb-4">{t.span2}</span>
               </div>
               <p className="text-base text-white">
-                Asesorando, diseñando, produciendo y evaluando la propuesta de capacitación junto al referente que la empresa disponga en el área.
+               {t.p2}
               </p>
             </div>
           </div>
