@@ -5,7 +5,7 @@ import translations from '../translations.json';
 
 export const Industrializacion = () => {
   const { language } = useLanguage();
-    // @ts-expect-error development
+  // @ts-expect-error development
   const t = translations[language].componentInd;
 
   return (
