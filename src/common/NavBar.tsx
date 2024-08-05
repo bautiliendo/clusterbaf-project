@@ -43,7 +43,7 @@ export const NavBar: React.FC = () => {
     <div className="top-0 left-0 w-full z-50 fixed bg-rich_black">
       <div className='flex items-center justify-between h-30 text-white px-4 max-w-7xl mx-auto'>
         <div className="flex-shrink-0">
-          <img src={Logo} className="h-16 cursor-pointer my-4" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
+          <img src={Logo} className="sm:h-16 h-14 cursor-pointer my-4" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
         </div>
         <div className="flex flex-grow justify-end items-center">
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
@@ -105,7 +105,7 @@ export const NavBar: React.FC = () => {
             e.stopPropagation();
           }} className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-50 bg-rich_black border-r-gray-900 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%]'}>
             <div className="flex items-center justify-between mx-4">
-              <img src={Logo} className="h-16 cursor-pointer my-4" onClick={() => { scrollToSection('about'); handleNav() }} alt="Logo Clusterbaf" />
+              <img src={Logo} className="sm:h-16 h-14 cursor-pointer my-4" onClick={() => { scrollToSection('hero'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }} alt="Logo Clusterbaf" />
               <AiOutlineClose size={25} onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}} className="" />
             </div>
             <ul className="p-4 font-bold flex flex-col text-center">
