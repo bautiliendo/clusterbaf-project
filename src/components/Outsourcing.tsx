@@ -4,8 +4,14 @@ import { Outsourcing2 } from "./Outsourcing2"
 import { Outsourcing3 } from "./Outsourcing3"
 import { Outsourcing4 } from "./Outsourcing4"
 import outsourcing from '../assets/Outosourcing.webp'
+import translations from '../translations.json';
+import { useLanguage } from "../hooks/useLanguage"
 
 export const Outsourcing = () => {
+  const { language } = useLanguage();
+  // @ts-expect-error development
+  const t = translations[language].outsourcing;
+
   return (
     <section className="bg-gradient-to-b from-white to-jonquil-900 py-28 lg:py-36">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
@@ -20,15 +26,10 @@ export const Outsourcing = () => {
           </div>
           <div className="space-y-8">
             <h2 className="text-4xl font-extrabold text-rich_black-500 sm:text-5xl">
-              Outsourcing de Servicios
+             {t.h2}
             </h2>
             <ul className="space-y-4">
-              {[
-                "I - Gestión de Proveedores",
-                "II Gestión de Mantenimiento",
-                "III Diseño Asistido CAD",
-                "IV Gestión y desarrollo de Proyectos (según lineamientos ISO 21500)",
-              ].map((item, index) => (
+              {t.list.map((item:string, index: number) => (
                 <li key={index} className="flex items-start">
                   <CheckCircle className="w-6 h-6 mr-2 text-jonquil-500 flex-shrink-0 mt-1" />
                   <p className="text-base text-rich_black-400">{item}</p>

@@ -189,6 +189,77 @@
       "p1": "Un servicio de capacitación profesional Certificada, adaptado a las necesidades de las empresas para aportar valor al staff de empleados",
       "span2": "¿Cómo?",
       "p2": "Asesorando, diseñando, produciendo y evaluando la propuesta de capacitación junto al referente que la empresa disponga en el área.s"
+    },
+    "outsourcing": {
+      "h2": "Outsourcing de Servicios",
+      "list": [
+        "I - Gestión de Proveedores",
+        "II Gestión de Mantenimiento",
+        "III Diseño Asistido CAD",
+        "IV Gestión y desarrollo de Proyectos (según lineamientos ISO 21500)"
+      ]
+    },
+    "outsourcing1": {
+      "h3": "I - Gestión de proveedores",
+      "p": "No es de extrañar que cualquier elemento diferencial que agregue valor a su compañía puede llegar a ser un factor decisivo para sus potenciales clientes. Y es justo en este contexto donde entra en juego la gestión de proveedores o la gestión de compras y abastecimiento, una importante área estratégica que les ayudará a reducir costos y tiempo, que aumentará sus resultados financieros a corto y largo plazo",
+      "liP1": "Desarrollo de Proveedores Nacionales y Extranjeros de 1° y 2° Nivel",
+      "liP2": "Asistencia técnica Residente;",
+      "liP3": "Es el Soporte que CLUSTERBAF ofrece a las Empresas que no disponen de personal para realizar la Asistencia en sus Clientes o Proveedores, preservando la buena Comunicación y resguardando la Imagen de la Empresa.",
+      "liP4": "Inspección y Retrabajo de Piezas",
+      "liP5": "Con el Objetivo de Examinar y medir las Características de Calidad de un Producto, así como de los componentes y materiales con los que está elaborado, o de un servicio o proceso determinado; realizamos el Servicio de Inspección siguiendo los Lineamientos de la Norma ISO 17020.",
+      "liP6": "Tipos de Inspección",
+      "liP7": "Inspección 100%",
+      "liP8": "Inspección por Muestreo: Inspección por Variables / Atributos.",
+      "liP9": "Con el Servicio de segregación y retrabajo, garantizamos que los Productos NO Conformes detectados durante el proceso de Inspección, sean corregidos de modo que cumplan con las especificaciones predefinidas.",
+      "liP10": "Embarque Controlado nivel I y II.",
+      "liP11": "El Embarque Controlado es un procedimiento de contención de Incidentes de calidad. Se aplica en casos en que el proveedor tenga, o potencialmente pueda tener, su proceso fuera de control, generando la aparición de piezas NO Conformes en sus clientes",
+      "liP12": "Nuestro Servicio puede ser implementado en supply chain o bien para control interno de despacho."
+    },
+    "outsourcing2": {
+      "h3": " II - Gestión de Mantenimiento",
+      "p": " Si algo podemos afirmar gracias a la experiencia de nuestro equipo, es que una de las partes fundamentales de toda actividad productiva es el mantenimiento industrial. Por eso, en CLUSTERBAF prestamos especial atención a este punto, pues nuestro compromiso se centra en contribuir a:",
+      "list": [
+        "Aumentar la vida útil",
+        "Miniminzar el riesgo de avería",
+        "Disminuir el uso de repuestos",
+        "Minimizar fallos",
+        "Optimizar la productividad",
+        "Aumentar el valor residual"
+      ],
+      "p1": "Implementación de Gestión del Mantenimiento",
+      "ulLi1": "Creación de Indicadores",
+      "ulLi2": "Tablero a Bordo",
+      "ulLi3": "Planificación del Presupuesto",
+      "p2": "Organización del área de Mantenimiento",
+      "ulLi4": "Definición de los diferentes tipos de Mantenimiento a implementar",
+      "ulLi5": "Estimación de Recursos",
+      "ulLi6": "Determinación de repuestos críticos",
+      "ulLi7": "Plan Anual de Mantenimiento Preventivo",
+      "p3": "Cálculo de Vida útil y estudios de fiabilidad en equipos e instalaciones.",
+      "p4": "Implementación de metodologías de análisis y resolución de problemas"
+    },
+    "outsourcing3": {
+      "h3": " III - Diseño asistido CAD",
+      "p": "A través del Diseño Asistido CAD, en CLUSTEBAF con más de 20 años de experiencia ofrecemos soluciones dinámicas centradas en el desarrollo de soluciones para ingeniería de medios productivos, matricería, embalajes metálicos, medios logísticos, dispositivos de ensamble, mecanizado, calidad, etc. Empezando por el concepto, la empresa se ocupa del diseño, desarrollo y su proceso productivo en sus más diversas tareas.",
+      "h4": "Ventajas",
+      "list": [
+        "Se pueden hacer cambios a las ideas de manera rápida y fácil por la transferencia electrónica de archivos",
+        "La comunicación con el cliente es más fácil.",
+        "La fabricación del producto puede ser más fácil.",
+        "Puede evitar errores costosos.",
+        "Reduce los costos ya que no se necesitan prototipos adicionales.",
+        "Ahorra tiempo a través de prácticas de trabajo eficientes.",
+        "Posee alta precisión y fidelidad"
+      ]
+    },
+    "outsourcing4": {
+      "h3": "IV - Gestión y Desarrollo de proyectos",
+      "h4": "Según lineamientos ISO 21500",
+      "p": "Cualquiera sea el tamaño de los Proyectos y Obras que lidere su empresa, nuestros servicios siempre se adaptarán a los requisitos de alcance, calidad y plazos requeridos, respaldando el trabajo con la misma seriedad, responsabilidad y entusiasmo con la que afrontamos cada compromiso",
+      "p2": "Ingeniería no es solo lo que hacemos, es lo que somos.",
+      "p3": "Ejecutar un proyecto industrial con la calidad adecuada, dentro del tiempo previsto y al costo presupuestado, supone la existencia de un equipo especializado que, bajo la dirección de un jefe de proyecto, asegure el cumplimiento de estos tres parámetros",
+      "p4": "Nos especializamos en proyectos llave en mano en ingeniería industrial, ingeniería civil e ingeniería mecánica,  su posterior seguimiento y mantenimiento",
+      "p5": "Desarrollando una estrategia integral entre la ingeniería, la fabricación y el montaje, basados en altos estándares de calidad y niveles de cumplimiento y compromiso."
     }
   },
 
@@ -382,6 +453,77 @@
       "p1": "A Certified professional training service, adapted to the needs of companies to add value to their staff",
       "span2": "How?",
       "p2": "By advising, designing, producing and evaluating the training proposal together with the company's designated representative in the area."
+    },
+    "outsourcing": {
+      "h2": "Outsourcing Services",
+      "list": [
+        "I - Supplier Management",
+        "II Maintenance Management",
+        "III Computer-Aided Design (CAD)",
+        "IV Project Management and Development (according to ISO 21500 guidelines)"
+      ]
+    },
+    "outsourcing1": {
+      "h3": "I - Supplier Management",
+      "p": "It's not surprising that any differentiating element that adds value to your company can become a decisive factor for your potential clients. And it's precisely in this context where supplier management or purchasing and supply management comes into play, an important strategic area that will help you reduce costs and time, which will increase your financial results in the short and long term",
+      "liP1": "Development of National and Foreign Suppliers of 1st and 2nd Tier",
+      "liP2": "Resident technical assistance;",
+      "liP3": "This is the Support that CLUSTERBAF offers to Companies that do not have personnel to provide Assistance to their Clients or Suppliers, preserving good Communication and safeguarding the Company's Image.",
+      "liP4": "Inspection and Rework of Parts",
+      "liP5": "With the Objective of Examining and measuring the Quality Characteristics of a Product, as well as the components and materials with which it is made, or a specific service or process; we carry out the Inspection Service following the Guidelines of ISO 17020 Standard.",
+      "liP6": "Types of Inspection",
+      "liP7": "100% Inspection",
+      "liP8": "Sampling Inspection: Inspection by Variables / Attributes.",
+      "liP9": "With the Segregation and Rework Service, we guarantee that the NON-Conforming Products detected during the Inspection process are corrected so that they meet the predefined specifications.",
+      "liP10": "Controlled Shipping Level I and II.",
+      "liP11": "Controlled Shipping is a quality incident containment procedure. It is applied in cases where the supplier has, or potentially may have, their process out of control, generating the appearance of NON-Conforming parts in their customers",
+      "liP12": "Our Service can be implemented in the supply chain or for internal dispatch control."
+    },
+    "outsourcing2": {
+      "h3": "II - Maintenance Management",
+      "p": "If there's one thing we can affirm thanks to our team's experience, it's that industrial maintenance is a fundamental part of any productive activity. That's why at CLUSTERBAF we pay special attention to this point, as our commitment is focused on contributing to:",
+      "list": [
+        "Increase useful life",
+        "Minimize the risk of breakdown",
+        "Reduce the use of spare parts",
+        "Minimize failures",
+        "Optimize productivity",
+        "Increase residual value"
+      ],
+      "p1": "Implementation of Maintenance Management",
+      "ulLi1": "Creation of Indicators",
+      "ulLi2": "Dashboard",
+      "ulLi3": "Budget Planning",
+      "p2": "Organization of the Maintenance area",
+      "ulLi4": "Definition of different types of Maintenance to implement",
+      "ulLi5": "Resource Estimation",
+      "ulLi6": "Determination of critical spare parts",
+      "ulLi7": "Annual Preventive Maintenance Plan",
+      "p3": "Calculation of Useful life and reliability studies on equipment and facilities.",
+      "p4": "Implementation of problem analysis and resolution methodologies"
+    },
+    "outsourcing3": {
+      "h3": "III - Computer-Aided Design (CAD)",
+      "p": "Through Computer-Aided Design (CAD), at CLUSTEBAF with over 20 years of experience, we offer dynamic solutions focused on developing solutions for production equipment engineering, tooling, metal packaging, logistics equipment, assembly devices, machining, quality, etc. Starting from the concept, the company takes care of the design, development, and production process in its most diverse tasks.",
+      "h4": "Advantages",
+      "list": [
+        "Changes to ideas can be made quickly and easily through electronic file transfer",
+        "Communication with the client is easier.",
+        "Product manufacturing can be easier.",
+        "It can avoid costly errors.",
+        "Reduces costs as additional prototypes are not needed.",
+        "Saves time through efficient work practices.",
+        "Has high precision and fidelity"
+      ]
+    },
+    "outsourcing4": {
+      "h3": "IV - Project Management and Development",
+      "h4": "According to ISO 21500 guidelines",
+      "p": "Whatever the size of the Projects and Works your company leads, our services will always adapt to the required scope, quality, and timeframe requirements, supporting the work with the same seriousness, responsibility, and enthusiasm with which we face each commitment",
+      "p2": "Engineering is not just what we do, it's who we are.",
+      "p3": "Executing an industrial project with the appropriate quality, within the expected time and budgeted cost, requires the existence of a specialized team that, under the direction of a project manager, ensures compliance with these three parameters",
+      "p4": "We specialize in turnkey projects in industrial engineering, civil engineering, and mechanical engineering, their subsequent monitoring and maintenance",
+      "p5": "Developing a comprehensive strategy between engineering, manufacturing, and assembly, based on high quality standards and levels of compliance and commitment."
     }
   }
 }
