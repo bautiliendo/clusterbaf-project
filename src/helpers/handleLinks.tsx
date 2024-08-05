@@ -1,3 +1,6 @@
+import React from 'react';
+import { isMobile } from './isMobile';
+
 export const handleWhatsapp = (e: React.FormEvent<HTMLButtonElement>) => {
   e.preventDefault();
   const mensaje = "Hola! Me contacto desde su página web para realizar una consulta"
@@ -11,8 +14,6 @@ export const handleLinkedIn = (e: React.FormEvent<HTMLButtonElement>) => {
   const link = "https://www.linkedin.com/company/clusterbaf/about/";
   window.open(link, '_blank')
 }
-
-import React from 'react';
 
 export const handleGmail = (e: React.MouseEvent<HTMLButtonElement>) => {
   e.preventDefault();
@@ -28,7 +29,7 @@ export const handleGmail = (e: React.MouseEvent<HTMLButtonElement>) => {
 
 export const handleGmailCV = (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
-  
+
   const formData = new FormData(e.currentTarget);
   const name = formData.get('user-name') as string;
   const email = formData.get('user-email') as string;
@@ -48,7 +49,13 @@ ${message}
 
 Adjuntaré mi CV`;
 
-  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${toEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-  window.open(gmailLink, '_blank');
+  if (isMobile()) {
+    // Intenta abrir la aplicación de correo nativa en dispositivos móviles
+    const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  } else {
+    // Usa el método actual para escritorio
+    const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${toEmail}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(gmailLink, '_blank');
+  }
 };
