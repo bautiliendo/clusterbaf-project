@@ -18,14 +18,14 @@ export const IngYServ: React.FC = () => {
 
                 </div>
 
-                <div className="grid grid-cols-1 mt-10 text-center sm:mt-16 sm:grid-cols-2 sm:gap-x-12 gap-y-12 md:grid-cols-3 md:gap-0 xl:mt-24">
+                <div className="grid grid-cols-1 gap-4 mt-10 text-center sm:mt-16 sm:grid-cols-2 lg:grid-cols-3 xl:mt-24">
                     <div className="md:p-8 lg:p-14 border border-gray-300 rounded-md shadow-xl " >
                         <AiOutlineBarChart className="mx-auto h-12 w-12 text-jonquil" />
 
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing1}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing1sub}</p>
                         <button
-                            className="btn-custom w-full justify-center"
+                            className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/ingenieriaGestion')}
                         >
                             {t.button}
@@ -41,7 +41,7 @@ export const IngYServ: React.FC = () => {
                         <AiOutlineSetting className="mx-auto h-12 w-12 text-jonquil" />
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing2}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing2sub}</p>
-                        <button className="btn-custom w-full justify-center"
+                        <button className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/ingenieriaProcesos')}
                         >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -55,7 +55,7 @@ export const IngYServ: React.FC = () => {
                         <AiOutlineBuild className="mx-auto h-12 w-12 text-jonquil" />
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing3}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing3sub}</p>
-                        <button className="btn-custom w-full justify-center"
+                        <button className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/industrializacion')}
                         >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -69,7 +69,7 @@ export const IngYServ: React.FC = () => {
                         <AiOutlineTool className="mx-auto h-12 w-12 text-jonquil" />
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing4}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing4sub}</p>
-                        <button className="btn-custom w-full justify-center"
+                        <button className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/mantenimiento')}
                         >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -83,7 +83,7 @@ export const IngYServ: React.FC = () => {
                         <AiOutlineTeam className="mx-auto h-12 w-12 text-jonquil" />
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing5}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing5sub}</p>
-                        <button className="btn-custom w-full justify-center"
+                        <button className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/outsourcing')}
                         >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
@@ -97,7 +97,7 @@ export const IngYServ: React.FC = () => {
                         <AiOutlineBook className="mx-auto h-12 w-12 text-jonquil" />
                         <h3 className="mt-12 text-xl font-bold text-gray-900 font-pj" style={{ minHeight: '3.5em' }}>{t.ing6}</h3>
                         <p className="mt-5 text-base text-gray-600 font-pj" style={{ minHeight: '10.5em' }} >{t.ing6sub}</p>
-                        <button className="btn-custom w-full justify-center"
+                        <button className="btn-custom w-[96%] justify-center mx-auto"
                             onClick={() => navigate('/capacitaciones')}
                         >{t.button}
                             <svg className="w-5 h-5 mt-0.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
