@@ -105,7 +105,7 @@ export const NavBar: React.FC = () => {
             e.stopPropagation();
           }} className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-50 bg-rich_black border-r-gray-900 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%]'}>
             <div className="flex items-center justify-between mx-4">
-              <img src={Logo} className="h-24 cursor-pointer" onClick={() => { scrollToSection('about'); handleNav() }} alt="Logo Clusterbaf" />
+              <img src={Logo} className="h-16 cursor-pointer my-4" onClick={() => { scrollToSection('about'); handleNav() }} alt="Logo Clusterbaf" />
               <AiOutlineClose size={25} onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}} className="" />
             </div>
             <ul className="p-4 font-bold flex flex-col text-center">
@@ -142,10 +142,10 @@ export const NavBar: React.FC = () => {
                 )}
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('about'); handleNav() }}>{t.about}</button>
+                <button onClick={() => { scrollToSection('about'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }}>{t.about}</button>
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('contact'); handleNav() }}>{t.contact}</button>
+                <button onClick={() => { scrollToSection('contact'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }}>{t.contact}</button>
               </li>
               <li className='p-4 mx-auto'><LanguageSwitch /></li>
             </ul>
