@@ -14,9 +14,9 @@ export const NavBar: React.FC = () => {
   const [dropdownOpen, setDropdownOpen] = useState<boolean>(false);
   const scrollToSection = useScrollNavigation();
   const { language } = useLanguage();
-     // @ts-expect-error development
+  // @ts-expect-error development
   const t = translations[language].navbar;
-     // @ts-expect-error development
+  // @ts-expect-error development
   const tProductOptions = translations[language].productOptions;
 
   const handleNav = () => {
@@ -105,10 +105,10 @@ export const NavBar: React.FC = () => {
             e.stopPropagation();
           }} className={nav ? 'fixed left-0 top-0 w-[100%] h-full z-50 bg-rich_black border-r-gray-900 ease-in-out duration-500 md:hidden' : 'fixed left-[-100%]'}>
             <div className="flex items-center justify-between mx-4">
-              <img src={Logo} className="sm:h-16 h-14 cursor-pointer my-4" onClick={() => { scrollToSection('hero'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }} alt="Logo Clusterbaf" />
-              <AiOutlineClose size={25} onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}} className="" />
+              <img src={Logo} className="sm:h-16 h-14 cursor-pointer my-4" onClick={() => { scrollToSection('hero'); handleNav(); { dropdownOpen ? toggleDropdown() : '' } }} alt="Logo Clusterbaf" />
+              <AiOutlineClose size={25} onClick={() => { handleNav(); { dropdownOpen ? toggleDropdown() : '' } }} className="" />
             </div>
-            <ul className="p-4 font-bold flex flex-col text-center">
+            <ul className="p-4 font-bold flex flex-col text-center overflow-y-auto h-[calc(100vh-100px)]">
               <li className='p-4 border-b border-gray-600'>
                 <button
                   onClick={toggleDropdown}
@@ -122,7 +122,7 @@ export const NavBar: React.FC = () => {
                     <Link
                       to={'/ingYServ'}
                       className="block py-2 px-4 text-sm text-left"
-                      onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}}
+                      onClick={() => { handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}
                     >
                       <p className="">{t.all}</p>
                     </Link>
@@ -132,7 +132,7 @@ export const NavBar: React.FC = () => {
                           key={index}
                           to={productOptionsRoutes[option]}
                           className="block py-2 px-4 text-sm text-left"
-                          onClick={() => {handleNav(); {dropdownOpen? toggleDropdown() : ''}}}
+                          onClick={() => { handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}
                         >
                           <p className="hover:scale-[1.02]">{index + 1}- {tProductOptions[option]}</p>
                         </Link>
@@ -142,10 +142,10 @@ export const NavBar: React.FC = () => {
                 )}
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('about'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }}>{t.about}</button>
+                <button onClick={() => { scrollToSection('about'); handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}>{t.about}</button>
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
-                <button onClick={() => { scrollToSection('contact'); handleNav(); {dropdownOpen? toggleDropdown() : ''} }}>{t.contact}</button>
+                <button onClick={() => { scrollToSection('contact'); handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}>{t.contact}</button>
               </li>
               <li className='p-4 mx-auto'><LanguageSwitch /></li>
             </ul>
