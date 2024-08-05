@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
             <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
-                        <img className="mb-4 w-full max-w-80 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
+                        <img className="mb-4  h-16  hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
                         <p className="text-sm text-white mb-4 font-semibold">{t.copyright}</p>
                         <div className='flex gap-1 hover:cursor-pointer'>
                             <a href={Brochure} onClick={(e) => { e.preventDefault(); window.open(Brochure, '_blank'); }} className="text-sm font-semibold text-jonquil">{t.downloadBrochure}</a>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from '../assets/logo.webp';
+import Logo from '../assets/logo-footer-transformed.webp';
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { FaChevronDown } from "react-icons/fa";
 import { useScrollNavigation } from "../helpers/ScrollToSection";
@@ -43,7 +43,7 @@ export const NavBar: React.FC = () => {
     <div className="top-0 left-0 w-full z-50 fixed bg-rich_black">
       <div className='flex items-center justify-between h-30 text-white px-4 max-w-7xl mx-auto'>
         <div className="flex-shrink-0">
-          <img src={Logo} className="h-24 cursor-pointer" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
+          <img src={Logo} className="h-16 cursor-pointer my-4" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
         </div>
         <div className="flex flex-grow justify-end items-center">
           <ul className='hidden md:flex items-center font-bold text-md gap-10'>
