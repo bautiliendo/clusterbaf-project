@@ -2,6 +2,7 @@ import { CheckCircle } from "lucide-react"
 import mantenimiento from '../assets/Mantenimiento.webp'
 import { useLanguage } from "../hooks/useLanguage"
 import translations from '../translations.json';
+import standard from '../assets/standard.webp'
 
 export const Mantenimiento = () => {
 
@@ -36,9 +37,7 @@ export const Mantenimiento = () => {
             </ul>
           </div>
         </div>
-        <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24 py-20">
-
-
+        <div className="grid  grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-24 py-20">
           <div className="space-y-8">
             <h3 className="text-4xl font-extrabold text-rich_black-500 sm:text-5xl">
               {t.h3}
@@ -74,10 +73,9 @@ export const Mantenimiento = () => {
           <div className="relative sm:animate-fade-left sm:animate-ease-linear animate-fade animate-ease-linear">
             <img
               className="w-full max-w-2xl mx-auto rounded-lg shadow-xl"
-              src="https://www.dalmec.com/wp-content/uploads/2016/05/1036877_R02.jpg"
-              alt="Trabajador en fábrica"
+              src={standard}
+              alt="Estandard handling"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-rich_black-500/70 to-transparent rounded-lg"></div>
           </div>
         </div>
       </div>
