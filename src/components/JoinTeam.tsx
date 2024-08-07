@@ -36,6 +36,7 @@ export const JoinTeam: React.FC = () => {
                         placeholder={t.messageP}
                         rows={4}
                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent resize-none"
+                        required
                     ></textarea>
                 </div>
                 <div>
