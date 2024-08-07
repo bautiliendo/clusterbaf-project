@@ -75,22 +75,22 @@ export const Contact: React.FC = () => {
                                 <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-6">
                                     <div>
                                         <label className="block text-sm font-medium">{t.label1}</label>
-                                        <input type="text" name="user_name" placeholder={t.label1p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <input required type="text" name="user_name" placeholder={t.label1p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
                                         <label className="block text-sm font-medium">{t.label2}</label>
-                                        <input type="email" name="user_email" placeholder={t.label2p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <input required type="email" name="user_email" placeholder={t.label2p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
                                         <label className="block text-sm font-medium">{t.label3}</label>
-                                        <input type="tel" name="user_phone" placeholder={t.label3p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <input required type="tel" name="user_phone" placeholder={t.label3p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
 
                                     <div>
                                         <label className="block text-sm font-medium">{t.label4}</label>
-                                        <input type="text" name="user_company" placeholder={t.label4p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
+                                        <input required type="text" name="user_company" placeholder={t.label4p} className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent" />
                                     </div>
                                 </div>
 
@@ -101,6 +101,7 @@ export const Contact: React.FC = () => {
                                         placeholder={t.label5p}
                                         rows={4}
                                         className="mt-1 block w-full px-3 py-2 bg-rich_black border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-jonquil focus:border-transparent resize-none"
+                                        required
                                     ></textarea>
                                 </div>
 
