@@ -46,7 +46,7 @@ export const NavBar: React.FC = () => {
           <img src={Logo} className="sm:h-16 h-14 cursor-pointer my-4" onClick={() => scrollToSection("hero")} alt="Logo Clusterbaf" />
         </div>
         <div className="flex flex-grow justify-end items-center">
-          <ul className='hidden md:flex items-center font-bold text-md gap-10'>
+          <ul className='hidden md:flex items-center font-bold text-md gap-4'>
             <li className='relative group'>
 
               <button

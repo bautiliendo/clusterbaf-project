@@ -29,7 +29,7 @@ export const Products: React.FC = () => {
             <main className="my-8">
                 <div className="container mx-auto px-6 relative">
                     {/* Contenedor de la imagen con blur reducido y hover */}
-                    <div className="relative w-full h-64 md:h-96 overflow-hidden rounded-md">
+                    <div className="relative w-full h-72 md:h-96 overflow-hidden rounded-md ">
                         <img
                             className="h-full w-full object-cover transition-all duration-300 filter blur-sm brightness-50 hover:blur-[2px] hover:brightness-75"
                             src={industrializacion}

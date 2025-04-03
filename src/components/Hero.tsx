@@ -1,12 +1,12 @@
 import React from 'react';
-import { useScrollNavigation } from "../helpers/ScrollToSection";
+// import { useScrollNavigation } from "../helpers/ScrollToSection";
 import HeroImg from '../assets/Hero.webp';
 import translations from '../translations.json';
 import { useLanguage } from '../hooks/useLanguage';
 
 
 export const Hero: React.FC = () => {
-  const scrollToSection = useScrollNavigation();
+  // const scrollToSection = useScrollNavigation();
   const { language } = useLanguage();
    // @ts-expect-error development
   const t = translations[language].hero;
@@ -25,9 +25,9 @@ export const Hero: React.FC = () => {
             <p>{t.description1}</p>
             <p className="hidden md:block">{t.description2}</p>
           </div>
-          <button type="button" className="btn-custom " onClick={() => scrollToSection('contact')}>
+          {/* <button type="button" className="btn-custom " onClick={() => scrollToSection('contact')}>
             {t.ctaButton}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
