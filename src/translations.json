@@ -8,6 +8,7 @@
     },
     "navbar": {
       "engineeringAndServices": "Ingeniería y Servicios",
+      "products": "Productos",
       "about": "Nosotros",
       "contact": "Contacto",
       "all": "Todas las categorías"
@@ -284,6 +285,7 @@
     },
     "navbar": {
       "engineeringAndServices": "Engineering and Services",
+      "products": "Products",
       "about": "About Us",
       "contact": "Contact",
       "all": "All categories"

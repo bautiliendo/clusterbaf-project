@@ -81,7 +81,7 @@ export const NavBar: React.FC = () => {
               )}
             </li>
             <li className='hover:scale-[1.04]'>
-              <Link to={"products"}>Productos</Link>
+              <Link to={"products"}>{t.products}</Link>
             </li>
             <li className='hover:scale-[1.04]'>
               <button onClick={() => scrollToSection('about')}>{t.about}</button>
