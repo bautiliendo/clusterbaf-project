@@ -148,9 +148,9 @@ export const NavBar: React.FC = () => {
                 <button onClick={() => { scrollToSection('about'); handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}>{t.about}</button>
               </li>
               <li className="p-4 border-b border-gray-600 hover:underline ">
-                <a href="/products" onClick={() => { handleNav(); dropdownOpen && toggleDropdown(); }}>
+                <Link to="/products" onClick={() => { handleNav(); dropdownOpen && toggleDropdown(); }}>
                   {t.products}
-                </a>
+                </Link>
               </li>
               <li className='p-4 border-b border-gray-600 hover:underline uppercase'>
                 <button onClick={() => { scrollToSection('contact'); handleNav(); { dropdownOpen ? toggleDropdown() : '' } }}>{t.contact}</button>
