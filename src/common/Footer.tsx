@@ -10,7 +10,7 @@ import translations from '../translations.json';
 export const Footer: React.FC = () => {
     const scrollToSection = useScrollNavigation();
     const { language } = useLanguage();
-       // @ts-expect-error development
+    // @ts-expect-error development
     const t = translations[language].footer;
 
     return (
@@ -19,8 +19,11 @@ export const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div>
                         <img className="mb-4 sm:h-16 h-14 hover:cursor-pointer" src={Logo} onClick={() => scrollToSection("hero")} alt="Logo clusterbaf" />
-                        <p className="text-sm text-white mb-4 font-semibold">{t.copyright}</p>
-                        <div className='flex gap-1 hover:cursor-pointer'>
+                        <p className="text-sm text-white font-semibold">{t.copyright}</p>
+                        <a href="https://sistemasjbl.vercel.app/" className="text-sm text-white font-semibold" target="_blank" rel="noopener noreferrer">
+                            Sistemas JBL
+                        </a>
+                        <div className='flex gap-1 hover:cursor-pointer mt-2'>
                             <a href={Brochure} onClick={(e) => { e.preventDefault(); window.open(Brochure, '_blank'); }} className="text-sm font-semibold text-jonquil">{t.downloadBrochure}</a>
                             <FaFileDownload className='text-jonquil' size={20} />
                         </div>
@@ -65,6 +68,6 @@ export const Footer: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer >
     );
 };

@@ -21,7 +21,7 @@
       "capacitaciones": "Capacitaciones"
     },
     "footer": {
-      "copyright": "© Copyright 2024, Todos los Derechos Reservados por Clusterbaf. (CREADO POR)",
+      "copyright": "© Copyright 2024, Todos los Derechos Reservados por Clusterbaf.",
       "downloadBrochure": "Descargar Brochure Institucional",
       "navigation": "Navegación",
       "engineeringAndServices": "Ingeniería y servicios",
@@ -260,6 +260,18 @@
       "p3": "Ejecutar un proyecto industrial con la calidad adecuada, dentro del tiempo previsto y al costo presupuestado, supone la existencia de un equipo especializado que, bajo la dirección de un jefe de proyecto, asegure el cumplimiento de estos tres parámetros",
       "p4": "Nos especializamos en proyectos llave en mano en ingeniería industrial, ingeniería civil e ingeniería mecánica,  su posterior seguimiento y mantenimiento",
       "p5": "Desarrollando una estrategia integral entre la ingeniería, la fabricación y el montaje, basados en altos estándares de calidad y niveles de cumplimiento y compromiso."
+    },
+    "products": {
+      "subtitle": "Representamos oficialmente en Córdoba una firma especializada en acoples mecánicos industriales. Descarga nuestro catálogo para conocer más sobre estas soluciones.",
+      "download": "Descargar Catálogo",
+      "h2": "Elementos de Protección Personal (EPP)",
+      "h2Subtitle": "Incorporamos a nuestro catálogo una línea de elementos de seguridad esenciales para la industria. Protege a tu equipo con productos de alta calidad.",
+      "p1": "Antiparras de Seguridad",
+      "p2": "Antiparras de Silicona",
+      "p3": "Anteojos Panorámicos",
+      "p4": "Guantes de Poliéster",
+      "p5": "Guantes de Descarne",
+      "p6": "Protector Auditivo"
     }
   },
 
@@ -285,7 +297,7 @@
       "capacitaciones": "Training"
     },
     "footer": {
-      "copyright": "© Copyright 2024, All Rights Reserved by Clusterbaf. (CREATED BY)",
+      "copyright": "© Copyright 2024, All Rights Reserved by Clusterbaf.",
       "downloadBrochure": "Download Institutional Brochure",
       "navigation": "Navigation",
       "engineeringAndServices": "Engineering and services",
@@ -524,6 +536,18 @@
       "p3": "Executing an industrial project with the appropriate quality, within the expected time and budgeted cost, requires the existence of a specialized team that, under the direction of a project manager, ensures compliance with these three parameters",
       "p4": "We specialize in turnkey projects in industrial engineering, civil engineering, and mechanical engineering, their subsequent monitoring and maintenance",
       "p5": "Developing a comprehensive strategy between engineering, manufacturing, and assembly, based on high quality standards and levels of compliance and commitment."
+    },
+    "products": {
+      "subtitle": "We officially represent in Cordoba a firm specialized in industrial mechanical couplings. Download our catalog to learn more about these solutions.",
+      "download": "Download Catalog",
+      "h2": "Personal Protective Equipment (PPE)",
+      "h2Subtitle": "We have added a line of essential safety equipment for the industry to our catalog. Protect your team with high-quality products.",
+      "p1": "Safety Goggles",
+      "p2": "Silicone Goggles",
+      "p3": "Panoramic Glasses",
+      "p4": "Polyester Gloves",
+      "p5": "Split Leather Gloves",
+      "p6": "Hearing Protector"
     }
   }
 }

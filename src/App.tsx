@@ -15,6 +15,7 @@ import { About } from './components/About';
 import { Contact } from './components/Contact';
 import { IngYServ } from './components/IngYServ';
 import { LanguageProvider } from './context/language';
+import { Products } from './components/Products';
 
 
 const App: React.FC = () => {
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/ingYServ" element={<IngYServ />} />
         <Route path="/ingenieriaGestion" element={<IngenieriaGestion />} />
         <Route path="/ingenieriaProcesos" element={<IngenieriaProcesos />} />

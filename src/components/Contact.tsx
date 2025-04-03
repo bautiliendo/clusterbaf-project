@@ -131,7 +131,7 @@ export const Contact: React.FC = () => {
                                     </svg>
                                     <div className="ml-3">
                                         <a href="mailto:comercial@clusterbaf.com" className="text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">comercial@clusterbaf.com</a>
-                                        <a href="mailto:ingeniería@clusterbaf.com" className="block mt-1 text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">ingeniería@clusterbaf.com</a>
+                                        <a href="mailto:ingeniería@clusterbaf.com" className="block mt-1 text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">ingenieria@clusterbaf.com</a>
                                     </div>
                                 </div>
 
@@ -141,7 +141,7 @@ export const Contact: React.FC = () => {
                                     </svg>
                                     <div className="ml-3">
                                         <p className="text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">+54 9 351 5581441</p>
-                                        <p className="block mt-1 text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">+54 9 351 2883834</p>
+                                        <p className="block mt-1 text-gray-700 hover:text-jonquil transition-colors sm:text-lg text-sm duration-300">+54 9 351 5575510</p>
                                     </div>
                                 </div>
 
